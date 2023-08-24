@@ -1,6 +1,7 @@
 package com.dsalgoportal.utils;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -14,43 +15,52 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ConfigReader {
 
-	public WebDriver driver;
-	public Properties prop;
-	public WebDriver initilizeDriver() throws IOException {
+	public static Properties properties;
+	private final static String propertyFilePath = System.getProperty("user.dir")
+			+ "\\src\\test\\resources\\config.properties";
 
-		 prop = new Properties();
-		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
-		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+	public static void loadConfig() throws Throwable {
 
-		if (browserName.equalsIgnoreCase("chrome")) {
-
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-
-		} else if (browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-			
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-
+		try {
+			FileInputStream fis;
+			fis = new FileInputStream(propertyFilePath);
+			properties = new Properties();
+			try {
+				properties.load(fis);
+				fis.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().window().maximize();
-		return driver;
+
 	}
-	
-	public String getApplicationUrl()
-	{
-		String url=prop.getProperty("baseURLWithoutHome");
+
+	public static String getBrowserType() {
+		String browserType = properties.getProperty("browser");
+		return browserType;
+	}
+
+	public static String getApplicationUrl() {
+		String url = properties.getProperty("baseURLWithoutHome");
 		return url;
 	}
-	public String getHomePageUrl()
-	{
-		String url=prop.getProperty("baseURL");
+
+	public static String getHomePageUrl() {
+		String url = properties.getProperty("baseURL");
 		return url;
+	}
+
+	public static String signInPageUrl() {
+		String url = properties.getProperty("signInPage");
+		return url;
+	}
+
+	public static String getexcelfilepath() {
+		String excelfilelpath = properties.getProperty("excelfilepath");
+		return excelfilelpath;
+
 	}
 }

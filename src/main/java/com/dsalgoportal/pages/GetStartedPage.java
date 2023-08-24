@@ -5,20 +5,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class GetStartedPage {
+public class GetStartedPage extends BasePage {
 
-    public WebDriver driver;
-	
-	public GetStartedPage(WebDriver driver)
-	{  
-		this.driver =driver;
+	public WebDriver driver;
+
+	public GetStartedPage(WebDriver driver) {
+		super(driver);
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(className="btn")WebElement getStartedBtn;
-	
-	public void clickGetStartBtn()
-	{
+
+	@FindBy(className = "btn")
+	WebElement getStartedBtn;
+
+	public void clickGetStartBtn() {
 		getStartedBtn.click();
 	}
 }
