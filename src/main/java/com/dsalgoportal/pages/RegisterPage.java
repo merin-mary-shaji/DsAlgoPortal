@@ -17,38 +17,42 @@ public class RegisterPage {
 	//id_username
 		@FindBy(id = "id_username")
 		public WebElement txtUsername;
+	//id_password1
+		@FindBy(id = "id_password1")
+		public WebElement txtPassword;
+	//id_password2
+		@FindBy(id = "id_password2")
+		public WebElement txtPasswordConfirmation;
+	//input[@value='Register']
+		@FindBy(xpath = "//input[@value='Register']")
+		public WebElement btnRegister;
+	//error message	
+		//@FindBy(xpath = "/html/body/div[3]")
+	//	WebElement errorMsg;
 		
+		
+
 		public void enterTxtintoUsername(String username) {
 			txtUsername.sendKeys(username);
 		}
-		
-		//id_password1
-		
-		@FindBy(id = "id_password1")
-		public WebElement txtPassword;
 		public void enterTxtintoPassword(String Password) {
 			txtPassword.sendKeys(Password);
 		}
-		
-		//id_password2
-		@FindBy(id = "id_password2")
-		public WebElement txtPasswordConfirmation;
 		public void enterTxtintoconfirmationPassword(String Password) {
 			txtPasswordConfirmation.sendKeys(Password);
 		}
-		
-		//input[@value='Register']
-		@FindBy(xpath = "//input[@value='Register']")
-		public WebElement btnRegister;
-		
-		
-		
 		public void clickonRegisterButton() {
 			btnRegister.click();
 			
 		}
 		
+		public String getErrorMessage() {
+			return errorMsg.getText();
+		}
 		
+		// div[@class='alert alert-primary'] :-error message
+		@FindBy(xpath = "//div[@class='alert alert-primary']")
+		public WebElement errorMsg;
 }
 
 

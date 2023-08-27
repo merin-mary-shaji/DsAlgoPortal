@@ -24,7 +24,6 @@ public class Hooks {
 
 	@AfterAll
 	public static void after() {
-
 		driverfactory.closeallDriver();
 	}
 }
