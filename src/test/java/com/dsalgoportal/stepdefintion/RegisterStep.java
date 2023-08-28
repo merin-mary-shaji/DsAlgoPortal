@@ -8,7 +8,6 @@ import com.dsalgoportal.pages.HomePage;
 import com.dsalgoportal.pages.RegisterPage;
 import com.dsalgoportal.utils.DriverFactory;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -57,10 +56,7 @@ public class RegisterStep {
 		}
 	}
 
-	@Then("close browser")
-	public void close_browser() {
 	
-	}
 
 	@Then("It should display an error message {string}")
 	public void it_should_display_an_error_message(String expectedMessage) {
