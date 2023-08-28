@@ -19,7 +19,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class SignInStep extends BaseClass {
+public class SignInStep {
 
 	public WebDriver driver = DriverFactory.getdriver();;
 	public SignInPage signinpage = new SignInPage(driver);
