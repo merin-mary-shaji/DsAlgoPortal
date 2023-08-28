@@ -59,7 +59,7 @@ public class RegisterStep {
 
 	@Then("close browser")
 	public void close_browser() {
-		//driver.close();
+	
 	}
 
 	@Then("It should display an error message {string}")

@@ -8,6 +8,7 @@ import com.dsalgoportal.pages.HomePage;
 import com.dsalgoportal.pages.RegisterPage;
 import com.dsalgoportal.utils.DriverFactory;
 
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,23 +36,3 @@ public class BaseStep {
 		Assert.assertEquals(title, driver.getTitle());
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,7 +13,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class GetStartedStep extends BaseClass {
+public class GetStartedStep  {
 
 	public WebDriver driver = DriverFactory.getdriver();;
 	public GetStartedPage getstartedpage = new GetStartedPage(driver);

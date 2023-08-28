@@ -15,7 +15,7 @@ public class HomeStep {
 	@When("User click on Sign in link")
 	public void user_click_on_sign_in_link() throws InterruptedException {
 		home.clickOnSignIn();
-		Thread.sleep(2000);
+		
 	}
 
 

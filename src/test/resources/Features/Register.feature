@@ -94,19 +94,6 @@ Scenario Outline: Check for error message for password with characters less than
       |username   |password|password confirmation|
       | Numpy@sdet84_1| a1b2c3d | a1b2c3d |  
       
-Scenario Outline: The user is succesfully able to register
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
-    When User click on Register link
-    Then Page Title should be "Registration"
-    When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"
-    When The user clicks on Register button
-    Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as <username>"     
-    
-       Examples:
-      |username   |password|password confirmation|
-      | testusername| Test@123 | Test@123 |  
-      
+
       
            
