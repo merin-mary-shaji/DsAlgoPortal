@@ -39,15 +39,17 @@ public class SignInStep {
 	}
 
 	@When("The user enters a valid {string} and {string}")
-	public void the_user_enters_a_valid_and(String name, String password) {
+	public void the_user_enters_a_valid_and(String name, String password)  {
 
 		signinpage.enterUsername(name);
 		signinpage.enterPassword(password);
+		
 	}
 
 	@Then("click login button to verify")
-	public void click_login_button_to_verify() {
+	public void click_login_button_to_verify()  {
 		signinpage.clickLoginBtn();
+		
 	}
 
 	@When("The user clicks on register link on signin page")
@@ -96,8 +98,9 @@ public class SignInStep {
 	}
 
 	@And("The user clicks Sign out")
-	public void the_user_clicks_sign_out() {
+	public void the_user_clicks_sign_out()  {
 		signinpage.clickSignOut();
+		
 	}
 
 	@And("Logout message should be displayed")

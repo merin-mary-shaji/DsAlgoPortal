@@ -24,7 +24,7 @@ public class HomePage extends BasePage {
 	//@FindBy(xpath = "//a[contains(text(),'Sign in')]")
 	@FindBy(xpath = "//*[@id=\"navbarCollapse\"]/div[2]/ul/a[3]")
 	public WebElement signinLink;
-
+	@FindBy(xpath="//h5[text()='Stack']/..//a")WebElement getStartedStackBtn;
 	
 	@FindBy(xpath="//a[@class='nav-link dropdown-toggle']")
 	public WebElement dataStructureDropdown;
@@ -70,6 +70,10 @@ public class HomePage extends BasePage {
 		act.moveToElement(linkEle).perform();
 		linkEle.click();
 		
+	}
+	public void clickStack_GetStartBtn()
+	{
+		getStartedStackBtn.click();
 	}
 	
 }
