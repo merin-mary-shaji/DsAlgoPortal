@@ -27,7 +27,7 @@ public class BaseStep {
 	@When("Click on Get Started")
 	public void click_on_get_started() throws InterruptedException {
 		getstartedpage.clickGetStartBtn();
-		Thread.sleep(2000);
+	
 
 }
 
