@@ -8,6 +8,7 @@ import org.testng.Assert;
 import com.dsalgoportal.pages.GetStartedPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -30,12 +31,14 @@ public class GetStartedStep  {
 	public void The_user_clicks_Get_started_button() {
 
 		getstartedpage.clickGetStartBtn();
+		LoggerLoad.info("User clicks on GetStarted Button");
 	}
 
 	@Then("The user should be redirected to homepage")
 	public void The_user_should_be_redirected_to_homepage() {
 
 		Assert.assertEquals(driver.getTitle(), title);
+		LoggerLoad.info("Title of the current page is : " + driver.getTitle());
 
 	}
 }
