@@ -16,7 +16,7 @@ public class BasePage {
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	@FindBy(xpath = "//a[text()='Sign out']")
@@ -27,7 +27,7 @@ public class BasePage {
 	}
 
 	public void waitForWebElementsToAppear(WebElement findby) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(findby));
 	}
 
