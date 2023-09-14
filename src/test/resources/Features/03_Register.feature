@@ -1,10 +1,8 @@
 Feature: Register
 
 Scenario Outline: Check for empty field use case
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-	 	When Click on Get Started
-    Then Page Title should be "NumpyNinja"
-    When User click on Register link
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
+		When User click on Register link
     Then Page Title should be "Registration"
     When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"
     When The user clicks on Register button
@@ -21,9 +19,7 @@ Scenario Outline: Check for empty field use case
       
 
  Scenario Outline: Check for Password mismatch
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Register link
     Then Page Title should be "Registration"
     When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"
@@ -38,9 +34,7 @@ Scenario Outline: Check for empty field use case
       
       
 Scenario Outline: Check for Password with only numbers
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Register link
     Then Page Title should be "Registration"
     When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"
@@ -52,9 +46,7 @@ Scenario Outline: Check for Password with only numbers
       | Numpy@sdet84| 12345678 | 12345678 |  
      
 Scenario Outline: Check for Password similar to username
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Register link
     Then Page Title should be "Registration"
     When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"
@@ -66,9 +58,7 @@ Scenario Outline: Check for Password similar to username
       | Numpy@sdet84_1| testsdet84 | testsdet84 |    
       
 Scenario Outline: Check for error message for commonly used password
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Register link
     Then Page Title should be "Registration"
     When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"
@@ -81,9 +71,7 @@ Scenario Outline: Check for error message for commonly used password
      
      
 Scenario Outline: Check for error message for password with characters less than 8
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Register link
     Then Page Title should be "Registration"
     When User enters Username as "<username>" , Password as "<password>" and Password confirmation as "<password confirmation>"

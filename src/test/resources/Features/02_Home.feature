@@ -1,24 +1,18 @@
 Feature: Home
  
   Scenario: Click Register
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Register link
     Then Page Title should be "Registration"
     
       
  Scenario: Click Sign In
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then  Page Title should be "NumpyNinja"
-    When User click on Sign in link
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
+  	When User click on Sign in link
     Then Page Title should be "Login"
     
  Scenario Outline: Click on DataStructure DropDown without login
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
     When User click on Data Structure DropDown
     And User click on "<option>"
     Then The user get warning message "You are not logged in"
@@ -35,10 +29,8 @@ Feature: Home
 
 
 Scenario Outline: Click on Get Started of Each DataStructure Section without login
-    Given User opens URL "https://dsportalapp.herokuapp.com/"
-    When Click on Get Started
-    Then Page Title should be "NumpyNinja"
-    When User click on Get Started of "<option>"
+    Given User opens URL "https://dsportalapp.herokuapp.com/home"
+		When User click on Get Started of "<option>"
     Then The user get warning message "You are not logged in"
     
 
