@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class StackPage extends BasePage {
-
+	public WebDriver driver;
 	public StackPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
