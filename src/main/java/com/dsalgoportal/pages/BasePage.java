@@ -16,6 +16,7 @@ public class BasePage {
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	@FindBy(xpath = "//a[text()='Sign out']")
