@@ -70,12 +70,12 @@ public class GraphStep{
 		List<Map<String, String>> testdata = reader.getData(Excelpath,Sheetname);
 		 pythonCode = testdata.get(RowNumber).get("pythonCode");
 		 Result = testdata.get(RowNumber).get("Result");
-		 System.out.println(pythonCode);
+		 //System.out.println(pythonCode);
 	}
 
 	@When("The user clicks on Run button after Entering valid python code in Graph tryEditor page")
 	public void the_user_clicks_on_run_button_after_entering_valid_python_code_in_graph_try_editor_page() {
-		System.out.println(pythonCode);
+		//System.out.println(pythonCode);
 	    Graphpage.enterText(pythonCode);
 	   Graphpage.clickRunbtn();
 	}
@@ -104,7 +104,7 @@ public class GraphStep{
 
 	@When("The user clicks on Run button after Entering invalid python code in Graph tryEditor page")
 	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_graph_try_editor_page() {
-		System.out.println(pythonCode);
+		//System.out.println(pythonCode);
 		Graphpage.enterText(pythonCode);
 	    Graphpage.clickRunbtn();
 

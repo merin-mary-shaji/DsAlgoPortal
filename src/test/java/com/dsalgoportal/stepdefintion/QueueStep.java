@@ -1,8 +1,5 @@
 package com.dsalgoportal.stepdefintion;
 
-import java.util.List;
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -57,7 +54,7 @@ public class QueueStep {
 	@Then("Page title should be {string}")
 	public void page_title_should_be(String title) {
 		if (driver.getPageSource().contains("Login was unsuccessful.")) {
-			System.out.println("**unsuccessful login***");
+			//System.out.println("**unsuccessful login***");
 			driver.close();
 			Assert.assertTrue(false);
 		} else 
@@ -70,7 +67,7 @@ public class QueueStep {
 	public void the_user_enters_python_code_in_editor_from_sheet_and(String sheetName, String rowNumber)
 			throws Exception {
 		String pythonCode = ExcelReader.readExcelValue(Excelpath, sheetName, rowNumber);
-		System.out.println("Python Code: " + pythonCode);
+		//System.out.println("Python Code: " + pythonCode);
 		queue.enterText(pythonCode);
 		queue.clickonRun();
 	}
@@ -95,12 +92,12 @@ public class QueueStep {
 	@When("The user clicks on Run button")
 	public void the_user_clicks_on_run_button() {
 		queue.clickonRun();
-		System.out.println("Clicked on run");
+		//System.out.println("Clicked on run");
 	}
 
 	@Then("user should be  presented with run result")
 	public void user_should_be_presented_with_run_result() {
-		System.out.println(queue.clickTogetoutput());
+		queue.clickTogetoutput();
 
 	}
 
