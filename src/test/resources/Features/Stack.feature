@@ -17,7 +17,7 @@ Feature: Title of your feature
 
   Scenario Outline: The user is able to run code in tryEditor
     When The user gets input from sheet "<Sheetname>" and <RowNumber>
-    And The user clicks on Run button after Entering valid python code in stack tryEditor
+    And The user clicks on Run button after Entering valid python code in tryEditor
     Then The user should be presented with Run output
 
     Examples: 
@@ -27,7 +27,7 @@ Feature: Title of your feature
   Scenario Outline: The user is able to get the error message for invalid syntax
     Given The user is in stack page having an tryEditor with a Run button to test
     When The user gets invalid input from sheet "<Sheetname>" and <RowNumber>
-    And The user clicks on Run button after Entering invalid python code in stack tryEditor
+    And The user clicks on Run button after Entering invalid python code in tryEditor
     Then The user should get the error message
 
     Examples: 
@@ -44,7 +44,7 @@ Feature: Title of your feature
 
   Scenario Outline: The user is able to run code in tryEditor
     When The user gets input from sheet "<Sheetname>" and <RowNumber>
-    And The user clicks on Run button after Entering valid python code in stack tryEditor
+    And The user clicks on Run button after Entering valid python code in tryEditor
     Then The user should be presented with Run output
 
     Examples: 
@@ -54,7 +54,7 @@ Feature: Title of your feature
   Scenario Outline: The user is able to get the error message for invalid syntax
     Given The user is in stack page having an tryEditor with a Run button to test
     When The user gets invalid input from sheet "<Sheetname>" and <RowNumber>
-    And The user clicks on Run button after Entering invalid python code in stack tryEditor
+    And The user clicks on Run button after Entering invalid python code in tryEditor
     Then The user should get the error message
 
     Examples: 
@@ -71,7 +71,7 @@ Feature: Title of your feature
 
   Scenario Outline: The user is able to run code in tryEditor
     When The user gets input from sheet "<Sheetname>" and <RowNumber>
-    And The user clicks on Run button after Entering valid python code in stack tryEditor
+    And The user clicks on Run button after Entering valid python code in tryEditor
     Then The user should be presented with Run output
 
     Examples: 
@@ -81,7 +81,7 @@ Feature: Title of your feature
   Scenario Outline: The user is able to get the error message for invalid syntax
     Given The user is in stack page having an tryEditor with a Run button to test
     When The user gets invalid input from sheet "<Sheetname>" and <RowNumber>
-    And The user clicks on Run button after Entering invalid python code in stack tryEditor
+    And The user clicks on Run button after Entering invalid python code in tryEditor
     Then The user should get the error message
 
     Examples: 

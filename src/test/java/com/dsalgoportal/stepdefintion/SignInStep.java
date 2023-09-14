@@ -55,6 +55,7 @@ public class SignInStep {
 	@When("The user clicks on register link on signin page")
 	public void the_user_clicks_on_register_link_on_signin_page() {
 		signinpage.clickRegisterLink();
+		//homepage.clickOnRegister();
 	}
 
 	@Then("The user redirected to Registration page from signin page")

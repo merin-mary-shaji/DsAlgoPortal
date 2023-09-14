@@ -61,7 +61,7 @@ public class RegisterStep {
 	@Then("It should display an error message {string}")
 	public void it_should_display_an_error_message(String expectedMessage) {
 		String actualMessage = regist.getErrorMessage();
-		System.out.println(actualMessage);
+	
 		Assert.assertEquals(actualMessage, expectedMessage);
 	}
 
@@ -69,8 +69,8 @@ public class RegisterStep {
 	public void the_user_should_be_redirected_to_homepage_with_the_message(String expectedMessage) {
 		String actualMessage = regist.getErrorMessage();
 		Assert.assertEquals(actualMessage, expectedMessage);
-		System.out.println(driver.getTitle());
-		System.out.println(actualMessage);
+		//System.out.println(driver.getTitle());
+		//System.out.println(actualMessage);
 	}
 
 }
