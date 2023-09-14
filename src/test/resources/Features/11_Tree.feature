@@ -1,11 +1,6 @@
 Feature: Tree feature
   I want to use this template for my feature file
 
-  Scenario: Login
-    Given The user is on Signin page of DS Algo portal
-    When The user enter valid "testusername" and "Test@123"
-    Then The user redirected to homepage
-
   Scenario: The user is able to navigate to Overview of Trees
     Given The user is on the Tree page after logged in
     When The user clicks on the Overview of Trees link
@@ -277,8 +272,7 @@ Feature: Tree feature
       | Sheetname  | RowNumber |
       | pythonCode |         3 |
 
-  
-Scenario: The user is able to navigate to Binary Search Trees Page
+  Scenario: The user is able to navigate to Binary Search Trees Page
     When The user clicks on the Applications of Binary Search Trees button
     Then The user should then be directed to Binary Search Trees Page
 
@@ -304,7 +298,7 @@ Scenario: The user is able to navigate to Binary Search Trees Page
     Examples: 
       | Sheetname  | RowNumber |
       | pythonCode |         3 |
-  
+
   Scenario: The user is able to navigate to Implementation Of BST Page
     When The user clicks on the Applications of Implementation Of BST button
     Then The user should then be directed to Implementation Of BST Page
@@ -331,8 +325,7 @@ Scenario: The user is able to navigate to Binary Search Trees Page
     Examples: 
       | Sheetname  | RowNumber |
       | pythonCode |         3 |
-  
+
   Scenario: The user is able to navigate to Practice Questions Page
     When The user clicks on the Applications of Practice Questions button
     Then The user should then be directed to Practice Questions Page
-  
