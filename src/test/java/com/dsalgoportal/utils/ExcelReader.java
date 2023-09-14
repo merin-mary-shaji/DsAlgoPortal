@@ -1,5 +1,6 @@
 package com.dsalgoportal.utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -66,4 +67,21 @@ public class ExcelReader {
 
 		return totalRow;
 	}
+	
+	public static String readExcelValue(String filePath, String sheetName, String rowString) throws Exception {
+		File Excelfile = new File(filePath);
+		FileInputStream Fis = new FileInputStream(Excelfile);	
+		int rownumber=Integer.parseInt(rowString);
+		XSSFWorkbook workbook = new XSSFWorkbook(Fis);
+		XSSFSheet sheet = workbook.getSheet(sheetName);
+		Row row = sheet.getRow(rownumber);
+		Cell cell = row.getCell(0);
+		String cellData = cell.getStringCellValue();
+		System.out.println(cellData);
+		workbook.close();
+		return cellData;
+
+
+	}
+	
 }

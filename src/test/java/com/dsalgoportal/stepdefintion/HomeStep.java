@@ -1,10 +1,12 @@
 package com.dsalgoportal.stepdefintion;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import com.dsalgoportal.pages.HomePage;
 import com.dsalgoportal.utils.DriverFactory;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -20,7 +22,11 @@ public class HomeStep {
 
 
 //home datastructures
-
+@Given("User opens URL {string}")
+	public void user_opens_url(String url) {
+	   driver.get(url); 
+	}
+	
 @When("User click on Data Structure DropDown")
 public void user_click_on_data_structure_drop_down() {
 	home.clickOnDataStructure();
@@ -39,6 +45,11 @@ public void the_user_get_warning_message(String string) {
 @When("User click on Get Started of {string}")
 public void user_click_on_get_started_of(String option) {
 	home.clickOnGetStartedOfEachSection(option);
+}
+
+@Then("Page Title should be {string}")
+public void page_title_should_be(String title) {
+	Assert.assertEquals(title, driver.getTitle());
 }
 }
 
