@@ -3,7 +3,7 @@ Feature: Graph feature
   Scenario: user login 
      Given The user is on Signin page of DS Algo portal
     When The user enter valid "testusername" and "Test@123"
-    Then The user directed to homepage
+    Then The user redirected to homepage
   
     
  Scenario: The user is able to navigate to Graph page

@@ -37,12 +37,7 @@ public class GraphStep{
 	String Result;
 	
 	
-	@Then("The user directed to homepage")
-	public void the_user_directed_to_homepage() {
-		 signinpage.clickLoginBtn();
-			Assert.assertEquals(driver.getTitle(), title);
-	}
-
+	
 	@Given("The user is on the Graph page after logged in")
 	public void the_user_is_on_the_graph_page_after_logged_in() {
 		homepage.clickgetStartGraphBtn();
