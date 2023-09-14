@@ -47,7 +47,7 @@ public class DSIntroPage extends BasePage{
 	public void codeOutput() {
 
 		String s = driver.findElement(pythonOutPut).getText();
-		System.out.println(s);
+		//System.out.println(s);
 	}
 	public void navigateback()
 	{ 

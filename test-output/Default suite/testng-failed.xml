@@ -7,7 +7,7 @@
         <methods>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="37 38"/>
+          <include name="runScenario" invocation-numbers="97 129 98 130 101 102 105 106 109 110 113 114 117 118 121 122 125 126"/>
         </methods>
       </class> <!-- com.dsalgoportal.testrunner.TestNGTestRunner -->
     </classes>

@@ -1,13 +1,9 @@
 package com.dsalgoportal.stepdefintion;
 
-import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -18,7 +14,10 @@ import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
 
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class ArraysStep {
 	public WebDriver driver = DriverFactory.getdriver();
