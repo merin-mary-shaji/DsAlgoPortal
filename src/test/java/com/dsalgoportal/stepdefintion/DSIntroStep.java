@@ -23,31 +23,18 @@ public class DSIntroStep {
 	HomePage homepage = new HomePage(driver);
 	DSIntroPage dsintropage = new DSIntroPage(driver);
 	String Excelpath = ConfigReader.getexcelfilepath();
-	String url = ConfigReader.signInPageUrl();
+	String url = ConfigReader.getHomePageUrl();
 	String dsintro = "Data Structures-Introduction";
 	String timecomp = "Time Complexity"; 
 	String assess = "Assessment"; 
 	String code; 
 	String rslt; 
 
-	@Given("The user has launched browser of choice  and is on sign in page")
-	public void the_user_has_launched_browser_of_choice_and_is_on_sign_in_page() {
-		driver.get(url);
-	}
 
-	@When("User enters valid  Username {string} and Password {string}")
-	public void user_enters_valid_username_and_password(String name, String password) {
-		signinpage.enterUsername(name);
-		signinpage.enterPassword(password);
-	}
-
-	@Then("The user is navigates to landing page")
-	public void the_user_is_navigates_to_landing_page() {
-		signinpage.clickLoginBtn();
-	}
 
 	@When("the user clicks on the Get Started button on homepage")
 	public void the_user_clicks_on_the_get_started_button_on_homepage() {
+		 driver.get(url);
 		 dsintropage.clickOnGetStarted();
 	}
 

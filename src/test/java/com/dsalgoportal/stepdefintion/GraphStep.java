@@ -25,7 +25,7 @@ public class GraphStep{
 	public HomePage homepage = new HomePage(driver);
 	public GraphPage Graphpage = new GraphPage(driver);
 	String Excelpath = ConfigReader.getexcelfilepath();
-	String url = ConfigReader.signInPageUrl();
+	String url = ConfigReader.getHomePageUrl();
 	String title = "NumpyNinja";
 	String title1 = "Graph";
 	String title2 = "Graph";
@@ -40,6 +40,7 @@ public class GraphStep{
 	
 	@Given("The user is on the Graph page after logged in")
 	public void the_user_is_on_the_graph_page_after_logged_in() {
+		driver.get(url);
 		homepage.clickgetStartGraphBtn();
 		Assert.assertEquals(driver.getTitle(), title1);
 	}

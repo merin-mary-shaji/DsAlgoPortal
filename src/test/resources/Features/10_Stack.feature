@@ -1,11 +1,6 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  Scenario: Login
-    Given The user is on Signin page of DS Algo portal
-    When The user enter valid "testusername" and "Test@123"
-    Then The user redirected to homepage
-
   Scenario: The user is able to navigate to Operations in Stack page
     Given The user is on the Stack page after logged in
     When The user clicks on the Operations in Stack link

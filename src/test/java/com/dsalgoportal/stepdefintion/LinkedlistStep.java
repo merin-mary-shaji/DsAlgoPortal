@@ -24,7 +24,7 @@ public class LinkedlistStep {
 	public HomePage homepage = new HomePage(driver);
 	public LinkedlistPage Linkedlistpage = new LinkedlistPage(driver);
 	String Excelpath = ConfigReader.getexcelfilepath();
-	String url = ConfigReader.signInPageUrl();
+	String url = ConfigReader.getHomePageUrl();
 	String title = "NumpyNinja";
 	String title1 = "Linked List";
 	String title2 = "Introduction";
@@ -44,6 +44,7 @@ public class LinkedlistStep {
 
 	@Given("The user is on the linkedlist page after logged in")
 	public void the_user_is_on_the_linkedlist_page_after_logged_in() {
+		driver.get(url);
 		homepage.clicklinkedlist_GetStartBtn();
 		Assert.assertEquals(driver.getTitle(), title1);
 	}

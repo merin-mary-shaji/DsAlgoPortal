@@ -25,7 +25,7 @@ public class StackStep{
 	public HomePage homepage = new HomePage(driver);
 	public StackPage stackpage = new StackPage(driver);
 	String Excelpath = ConfigReader.getexcelfilepath();
-	String url = ConfigReader.signInPageUrl();
+	String url = ConfigReader.getHomePageUrl();
 	String title = "NumpyNinja";
 	String title1 = "Stack";
 	String title2 = "Operations in Stack";
@@ -37,24 +37,10 @@ public class StackStep{
 	String pythoncode;
 	String result;
 	
-	@Given("The user is on Signin page of DS Algo portal")
-	public void the_user_is_on_signin_page_of_ds_algo_portal() {
-		
-		driver.get(url);
-	}
-	@When("The user enter valid {string} and {string}")
-	public void the_user_enter_valid_and(String name, String password) {
-		signinpage.enterUsername(name);
-		signinpage.enterPassword(password);  
-	}
-	@Then("The user redirected to homepage")
-	public void the_user_redirected_to_homepage() {
-		signinpage.clickLoginBtn();
-		Assert.assertEquals(driver.getTitle(), title);
-	}
-
+	
 	@Given("The user is on the Stack page after logged in")
 	public void the_user_is_on_the_stack_page_after_logged_in() {
+		driver.get(url);
 		homepage.clickStack_GetStartBtn();
 		Assert.assertEquals(driver.getTitle(), title1);
 		

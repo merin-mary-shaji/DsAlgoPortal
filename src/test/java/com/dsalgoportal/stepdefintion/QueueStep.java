@@ -20,11 +20,12 @@ public class QueueStep {
 
 	String  pythoncode;
 	String Excelpath = ConfigReader.getexcelfilepath();
-	String url = ConfigReader.signInPageUrl();
+	String url = ConfigReader.getHomePageUrl();
 	String result;
 
 	@When("The user clicks on DataStructure drop down")
 	public void the_user_clicks_on_data_structure_drop_down() {
+		driver.get(url);
 		home.clickOnDataStructure();
 	}
 
