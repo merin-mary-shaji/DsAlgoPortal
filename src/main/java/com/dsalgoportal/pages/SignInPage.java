@@ -40,6 +40,7 @@ public class SignInPage extends BasePage {
 
 	public void clickLoginBtn() {
 		clickBtn.click();
+		System.out.println();
 	}
 
 	// login for excel sheet data

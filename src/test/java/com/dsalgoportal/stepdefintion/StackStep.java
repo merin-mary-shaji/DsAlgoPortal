@@ -103,11 +103,11 @@ public class StackStep{
 	    stackpage.clickTryHereBtn();
 	}
 	@When("The user gets invalid input from sheet {string} and {int}")
-	public void the_user_gets_invalid_input_from_sheet_and(String Sheetname, Integer Rownumber) throws InvalidFormatException, IOException {
+	public void the_user_gets_invalid_input_from_sheet_and(String Sheetname, Integer RowNumber) throws InvalidFormatException, IOException {
 		ExcelReader reader = new ExcelReader();
 		List<Map<String, String>> testdata = reader.getData(Excelpath, Sheetname);
-		 pythoncode = testdata.get(Rownumber).get("pythonCode");
-		 result = testdata.get(Rownumber).get("Result");
+		 pythoncode = testdata.get(RowNumber).get("pythonCode");
+		 result = testdata.get(RowNumber).get("Result");
 	}
 	@When("The user clicks on Run button after Entering invalid python code in stack tryEditor")
 	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_stack_try_editor() {
