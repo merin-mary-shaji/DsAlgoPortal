@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.dsalgoportal.pages.HomePage;
-import com.dsalgoportal.pages.SignInPage;
 import com.dsalgoportal.pages.LinkedlistPage;
+import com.dsalgoportal.pages.SignInPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
@@ -19,7 +19,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LinkedlistStep{
+public class LinkedlistStep {
+
 	public WebDriver driver = DriverFactory.getdriver();
 	public SignInPage signinpage = new SignInPage(driver);
 	public HomePage homepage = new HomePage(driver);
@@ -41,16 +42,7 @@ public class LinkedlistStep{
 	String pythoncode;
 	String result;
 	
- @When("The user selecting linkedlist item from the drop down menu")
-	public void the_user_selecting_linkedlist_item_from_the_drop_down_menu() {
-	    homepage.clickOnDataStructure();
-	    homepage.clickgetstart_linkedlist();
-	}
-
-	@Then("The user redirected to linkedlist  Page")
-	public void the_user_redirected_to_linkedlist_page() {
-		Assert.assertEquals(driver.getTitle(), title);
-	}
+ 
 
 	@Given("The user is on the linkedlist page after logged in")
 	public void the_user_is_on_the_linkedlist_page_after_logged_in() {
@@ -82,7 +74,7 @@ public class LinkedlistStep{
 		List<Map<String, String>> testdata = reader.getData(Excelpath,name);
 		 pythoncode = testdata.get(Row).get("pythonCode");
 		 result = testdata.get(Row).get("Result");
-		 System.out.println(pythoncode);
+		 //System.out.println(pythoncode);
 		 }
 
 	@When("The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor")
@@ -234,4 +226,3 @@ public class LinkedlistStep{
 }
 
 }
-	

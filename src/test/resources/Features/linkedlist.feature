@@ -5,10 +5,6 @@ Feature: Linked List feature
     When The user enter valid "testusername" and "Test@123"
     Then The user redirected to homepage
  
-   Scenario: User navigated to linkedlist page
-    When The user selecting linkedlist item from the drop down menu
-    Then The user redirected to linkedlist  Page
-
   Scenario: The user is able to navigate to introduction of linkedlist page
     Given The user is on the linkedlist page after logged in
     When The user clicks on the introduction link
