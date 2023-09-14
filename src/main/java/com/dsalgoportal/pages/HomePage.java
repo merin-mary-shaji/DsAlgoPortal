@@ -25,9 +25,11 @@ public class HomePage extends BasePage {
 	// @FindBy(xpath = "//a[contains(text(),'Sign in')]")
 	@FindBy(xpath = "//*[@id=\"navbarCollapse\"]/div[2]/ul/a[3]")
 	public WebElement signinLink;
-	@FindBy(xpath = "//h5[text()='Stack']/..//a")
-	WebElement getStartedStackBtn;
-	@FindBy(xpath = "//a[@class='nav-link dropdown-toggle']")
+
+	@FindBy(xpath="//h5[text()='Stack']/..//a")WebElement getStartedStackBtn;
+	@FindBy(xpath = "//a[@href='linked-list']")WebElement getstart_linkedlist;
+	@FindBy (xpath = "//a[@href ='graph']")WebElement getStartGraphBtn;
+	@FindBy(xpath="//a[@class='nav-link dropdown-toggle']")
 	public WebElement dataStructureDropdown;
 	// div[@class='alert alert-primary']
 	@FindBy(xpath = "//div[@class='alert alert-primary']")
@@ -80,7 +82,18 @@ public class HomePage extends BasePage {
 		getStartedStackBtn.click();
 	}
 
+
+	public void clicklinkedlist_GetStartBtn() {
+		getstart_linkedlist.click();
+		
+		
+	}
+	public void clickgetStartGraphBtn() {
+		getStartGraphBtn.click();
+	}
+	
 	public void clickTree_GetStartBtn() {
 		getStartedTreeBtn.click();
 	}
+
 }
