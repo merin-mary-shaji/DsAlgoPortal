@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 
-@CucumberOptions(features = "src/test/resources/Features/Array.feature", glue = "com.dsalgoportal.stepdefintion", monochrome = true, dryRun = false, plugin = {
+@CucumberOptions(features = "src/test/resources/Features/DSIntro.feature", glue = "com.dsalgoportal.stepdefintion", monochrome = true, dryRun = false, plugin = {
 		"html:target/cucumber.html" })
 
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
