@@ -81,13 +81,13 @@ public class ArrayPage extends BasePage {
 
 		WebElement focuselement = driver.switchTo().activeElement();
 		focuselement.sendKeys(pythoncode);
-		System.out.println("Test");
+		//System.out.println("Test");
 	}
 
 	public void codeOutput() {
 
 		String s = driver.findElement(pythonOutPut).getText();
-		System.out.println(s);
+		//System.out.println(s);
 	}
 
 	public void runButtonEnabled() {
@@ -123,9 +123,9 @@ public class ArrayPage extends BasePage {
 			System.out.println();
 //			driver.findElement(By.xpath("//span[text()='search']")).clear();
 		} catch (Exception e) {
-			System.out.println("Exception " + e);
+			//System.out.println("Exception " + e);
 		}
-		System.out.println("imhere");
+		//System.out.println("imhere");
 	}
 
 	public String alerMsg() {
@@ -177,7 +177,7 @@ public class ArrayPage extends BasePage {
 	public void clickOnSubmitButton() {
 		driver.findElement(clickOnSubmit).click();
 		String s = driver.findElement(pythonOutPut).getText();
-		System.out.println(s);
+		//System.out.println(s);
 	}
 
 	public void clickOnMaxConsecutiveNum() {
