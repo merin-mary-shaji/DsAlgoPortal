@@ -25,7 +25,8 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//*[@id=\"navbarCollapse\"]/div[2]/ul/a[3]")
 	public WebElement signinLink;
 	@FindBy(xpath="//h5[text()='Stack']/..//a")WebElement getStartedStackBtn;
-	
+	@FindBy(xpath = "//a[@href='linked-list']")WebElement getstart_linkedlist;
+	@FindBy (xpath = "//a[@href ='graph']")WebElement getStartGraphBtn;
 	@FindBy(xpath="//a[@class='nav-link dropdown-toggle']")
 	public WebElement dataStructureDropdown;
 	// div[@class='alert alert-primary']
@@ -74,6 +75,27 @@ public class HomePage extends BasePage {
 	public void clickStack_GetStartBtn()
 	{
 		getStartedStackBtn.click();
+	}
+
+	public void clicklinkedlist_GetStartBtn() {
+		getstart_linkedlist.click();
+		
+		
+	}
+	public void clickgetStartGraphBtn() {
+		getStartGraphBtn.click();
+	}
+	
+	
+
+	public void clickgetstart_linkedlist() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void clickGraph_GetStartBtn() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

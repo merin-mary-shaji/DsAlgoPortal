@@ -17,7 +17,7 @@ public class ConfigReader {
 
 	public static Properties properties;
 	private final static String propertyFilePath = System.getProperty("user.dir")
-			+ "\\src\\test\\resources\\config.properties";
+			+ "/src/test/resources/config.properties";
 
 	public static void loadConfig() throws Throwable {
 

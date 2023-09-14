@@ -1,104 +1,195 @@
-
-@linkedlistpage
-Feature: Testing LinkedList Page
-
- Background: @linkedlisthomepage
-  Scenario: To validate the  "linkedlistpage"
-    Given The user opens the "homepage" after logged in 
-    And Click "get started"button on the homepage 
-    When The user selects "linked list" from the "data structures" dropdown button 
-    Then The user navigates to "linked list" page 
-    
-  @linkedlistintroductinpage
-   Scenario: The user validates the "linked list introduction" page
-     Given clicks on "introduction" of linkedlist 
-     Then user navigates to introduction page 
-     When user clicks on try here button in introduction page 
-     Then it navigates user into the "Assessment" page
-     When user enters the python code on try editor "<Programs>"
-     And click on run button
-     Then user should present output of programs in "linkedlist-intorduction" 
-     Examples:
-		         | Programs      |
-		         | print ('linkedlist-introduction')|
- @creatinglinkedlistpage 
-  Scenario: The user validates "creatinglinkedlist"page
-  Given   user clicks on "creatinglinkedlist"of linkedlist
-  Then user is directed to the creatinglinkedlist page 
-  When user clicks on tryhere button in creating linkedlistpage 
-  Then user is directed to the "Assessment" page
-  And user enters the python code on try editor "<Programs>"
-  When user clicks on run button
-  Then user should present output of programs in creatinglinkedlist
-   Examples: 
-		   |Programs|
-		   |print ('welcome')|
-  @Typesoflinkedlist
-  Scenario: The user validates "typesoflinkedlist" page 
- Given  user clicks on "typesoflinkedlist" of linkedlist
-  Then user is directed to the typesoflinkedlist page 
-  When user clicks on tryhere button in typesoflinkedlist page
-  Then user is directed to the "Assessment" page 
-  And user enters the python code on try editor "<Programs>"
-   When user clicks on run button
-   Then user should be present output of programs
-    Examples: 
-	   |Programs|
-	   |print ('typesoflinkedlist')|
-   @Implementlinkedlistinpython
-   Scenario: The user validates "Implementlinkedlistinpython"
-   Given user clicks on "implementlinkedlistinpython" of linkedlist
-   Then user directs to the implementlinkedlistinpython page 
-   When user clicks on tryhere button in implementlinkedlistinpython
-   Then user is directed to the "assessement" page 
-   And user eneters the pythoncode on try editor "<Programs>"
-    When user clicks on run button 
-   Then user should be present with the output 
-   Examples: 
-   |Programs|
-   |print ('implementlinkedlistinpython')|
-    @Transversal
-   Scenario: The user validates "Transversal"
-   Given  user clicks on "Transversal"of linkedlist
-   Then user directs to the transversal page 
-   When user clicks on tryhere button in transversal
-   Then user is directed to the "assessement" page 
-   And user eneters the pythoncode on try editor "<Programs>"
-    When user clicks on run button 
-   Then user should be present with the output 
-   Examples: 
-   |Programs|
-   |print ('Transversallinkedlist')|
-    @Insertion
-   Scenario: The user validates "Insertion"
-   Given user clicks on "Insertion" of linkedlist
-   Then user directs to the Insertion page 
-   When user clicks on tryhere button in insertion
-   Then user is directed to the "assessement" page 
-   And user eneters the pythoncode on try editor "<Programs>"
-    When user clicks on run button 
-   Then user should be present with the output 
-   Examples: 
-   |Programs|
-   |print ('insertionlinkedlist')|
-    @Deletion
-   Scenario: The user validates "Deletion"
-   Given  user clicks on "Deletion" of linkedlist
-   Then user directs to the deletion page 
-   When user clicks on tryhere button in deletion
-   Then user is directed to the "assessement" page 
-   And user eneters the pythoncode on try editor "<Programs>"
-    When user clicks on run button 
-   Then user should be present with the output 
-   Examples: 
-   |Programs|
-   |print ('Deletionlinkedlist')|
-   
-   
-   
-  
-  
-  
+Feature: Linked List feature
+  To validate the linkedlist feature file
+ Scenario: user logsin 
+     Given The user is on Signin page of DS Algo portal
+    When The user enter valid "testusername" and "Test@123"
+    Then The user redirected to homepage
  
-         
-     
+   Scenario: User navigated to linkedlist page
+    When The user selecting linkedlist item from the drop down menu
+    Then The user redirected to linkedlist  Page
+
+  Scenario: The user is able to navigate to introduction of linkedlist page
+    Given The user is on the linkedlist page after logged in
+    When The user clicks on the introduction link
+    Then The user should then be directed to introduction page 
+
+  Scenario: The user is able to navigate to a page having an tryEditor 
+    When The user clicks Try Here button in introduction of linkedlist page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+
+  Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+
+  Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+
+  Scenario: The user is able to navigate to creating linkedlist Page
+    When The user clicks on the creating linkedlist button
+    Then The user should then be directed to creating linkedlist Page
+
+  Scenario: The user is able to navigate to creating linkedlist page having an tryeditor
+    When The user clicks Try Here button in creatinglinkedlist page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+
+  
+  Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+
+ Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+  Scenario: The user is able to navigate to types of linkedlist Page
+    When The user clicks on the types of linkedlist button
+    Then The user should be directed to types of linkedlist Page
+
+  Scenario: The user is able to navigate to types of linkedlist page having an tryEditor
+    When The user clicks Try Here button in types of linkedlist page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+
+   Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+  Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+ Scenario: The user is able to navigate to implement linkedlist in python  Page
+    When The user clicks on the implement linkedlist in python button
+    Then The user should be directed to implement linkedlist in python Page
+
+  Scenario: The user is able to navigate to implement linkedlist in python page having an tryEditor
+    When The user clicks Try Here button in implement linkedlist in python  page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+
+   Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+
+  Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+ Scenario: The user is able to navigate to linkedlist transversal Page
+    When The user clicks on the linkedlist transversal button
+    Then The user should be directed to linkedlist transversal Page
+
+  Scenario: The user is able to navigate to linkedlist transversal page having an tryEditor
+    When The user clicks Try Here button in linkedlist transversal page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+ 
+ Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+  Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+  Scenario: The user is able to navigate to linkedlist insertion Page
+    When The user clicks on the linkedlist insertion button
+    Then The user should be directed to linkedlist insertion Page
+
+  Scenario: The user is able to navigate to linkedlist insertion page having an tryEditor
+    When The user clicks Try Here button in linkedlist insertion page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+
+   Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+ Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+    Scenario: The user is able to navigate to linkedlist deletion Page
+    When The user clicks on the linkedlist deletion button
+    Then The user should be directed to linkedlist deletion Page
+
+  Scenario: The user is able to navigate to linkedlist deletion page having an tryEditor
+    When The user clicks Try Here button in linkedlist deletion page
+    Then The user should be redirected to a page having an Editor page with a Run button to test
+
+   Scenario Outline: The user is able to run valid code in tryEditor page of linkedlist
+    When The user gets input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor
+    Then The user should be presented with Run output welcome to linkedlist page
+
+    Examples: 
+      | name  | Row |
+      |llCode |         0 |
+  Scenario Outline: The user is able to get the error message for invalid syntax of linkedlist page 
+    Given The user is in introduction of linkedlist  page having an tryEditor with a Run button to test
+    When The user gets invalid input from spread sheet "<name>" and <Row>
+    And The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor
+    Then The user should expect the error message 
+
+    Examples: 
+      | name  | Row |
+      |llCode |         1 |
+  Scenario: The user is able to navigate to Practice Questions in linkedlist Page
+    When The user clicks on the Practice Questions button in linkedlist page
+    Then The user should be redirected to Practice Questions page of linkedlist page
