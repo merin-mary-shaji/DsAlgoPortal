@@ -5,7 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LinkedlistPage extends BasePage{
+
+public class LinkedlistPage extends BasePage {
 	public LinkedlistPage (WebDriver driver) {
 		super(driver);
 		this.driver = driver;
@@ -92,5 +93,4 @@ public String alertPopUp() {
 	return alertmsg;
 
 }	
-
 }

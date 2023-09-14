@@ -18,9 +18,7 @@ import com.dsalgoportal.utils.ExcelReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 public class LinkedlistStep {
-
 	public WebDriver driver = DriverFactory.getdriver();
 	public SignInPage signinpage = new SignInPage(driver);
 	public HomePage homepage = new HomePage(driver);
@@ -79,7 +77,7 @@ public class LinkedlistStep {
 
 	@When("The user clicks on Run button after Entering valid python code in introduction of linkedlist  tryEditor")
 	public void the_user_clicks_on_run_button_after_entering_valid_python_code_in_introduction_of_linkedlist_try_editor() {
-		System.out.println(pythoncode);
+		//System.out.println(pythoncode);
         Linkedlistpage.enterText(pythoncode);
        Linkedlistpage.clickrunbtn();
 	}
@@ -106,7 +104,7 @@ public class LinkedlistStep {
 
 	@When("The user clicks on Run button after Entering invalid python code in introduction of linkedlist tryEditor")
 	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_introduction_of_linkedlist_try_editor() {
-		System.out.println(pythoncode);
+		//System.out.println(pythoncode);
 		Linkedlistpage.enterText(pythoncode);
 	    Linkedlistpage.clickrunbtn();
 	}
@@ -224,5 +222,4 @@ public class LinkedlistStep {
    public void the_user_should_be_redirected_to_practice_questions_page_of_linkedlist_page() {
 	   Assert.assertEquals(driver.getTitle(), title10);
 }
-
 }

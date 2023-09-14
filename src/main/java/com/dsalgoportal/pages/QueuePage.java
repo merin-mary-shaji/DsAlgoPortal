@@ -49,7 +49,7 @@ public class QueuePage extends BasePage {
 		js.executeScript("window.scrollBy(0,500)");
 		
 			driver.findElement(By.xpath("//a[contains(text(),'"+topicLink+"')]")).click();	
-			System.out.println("clicked");
+			//System.out.println("clicked");
 		
 		}
 
