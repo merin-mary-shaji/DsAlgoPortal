@@ -6,8 +6,8 @@
       <class name="com.dsalgoportal.testrunner.TestNGTestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="55 56 57 58 59 60 61 62"/>
         </methods>
       </class> <!-- com.dsalgoportal.testrunner.TestNGTestRunner -->
     </classes>
