@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>171/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>163/8/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 14 16:19:38 CDT 2023</td>
+<td>Started on:</td><td>Mon Sep 18 22:09:33 CDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>139 seconds (139712 ms)</td>
+<tr><td>Total time:</td><td>187 seconds (187545 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,449 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Squares of a Sorted Array", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=116.0.5845.188): SyntaxError: bad input on line 1
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.codeOutput(ArrayPage.java:89)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_should_be_presented_with_valid_output(ArraysStep.java:115)
+	at ✽.the user should be presented with valid output.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:170)
+</pre></div><a href='#' onClick='toggleBox("stack-trace573424492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace573424492'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=116.0.5845.188): SyntaxError: bad input on line 1
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.codeOutput(ArrayPage.java:89)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_should_be_presented_with_valid_output(ArraysStep.java:115)
+	at ✽.the user should be presented with valid output.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:170)
+</pre></div></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Max Consecutive Ones", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=116.0.5845.188): SyntaxError: bad input on line 1
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.codeOutput(ArrayPage.java:89)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_should_be_presented_with_valid_output(ArraysStep.java:115)
+	at ✽.the user should be presented with valid output.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:136)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1210205057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1210205057'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=116.0.5845.188): SyntaxError: bad input on line 1
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.codeOutput(ArrayPage.java:89)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_should_be_presented_with_valid_output(ArraysStep.java:115)
+	at ✽.the user should be presented with valid output.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:136)
+</pre></div></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Find Numbers with Even Number of Digits", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=116.0.5845.188): SyntaxError: bad input on line 1
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.codeOutput(ArrayPage.java:89)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_should_be_presented_with_valid_output(ArraysStep.java:115)
+	at ✽.the user should be presented with valid output.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:153)
+</pre></div><a href='#' onClick='toggleBox("stack-trace831019851", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace831019851'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 1}
+  (Session info: chrome=116.0.5845.188): SyntaxError: bad input on line 1
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=id, value=output}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.codeOutput(ArrayPage.java:89)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_should_be_presented_with_valid_output(ArraysStep.java:115)
+	at ✽.the user should be presented with valid output.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:153)
+</pre></div></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Find Numbers with Even Number of Digits", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][3]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnFindNumbers(ArrayPage.java:188)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_find_numbers_with_even_number_of_digits_link(ArraysStep.java:224)
+	at ✽.The user clicks Find Numbers with Even Number of Digits link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:157)
+</pre></div><a href='#' onClick='toggleBox("stack-trace40245733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40245733'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][3]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnFindNumbers(ArrayPage.java:188)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_find_numbers_with_even_number_of_digits_link(ArraysStep.java:224)
+	at ✽.The user clicks Find Numbers with Even Number of Digits link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:157)
+</pre></div></td>
+<td>15</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Find Numbers with Even Number of Digits", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][3]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnFindNumbers(ArrayPage.java:188)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_find_numbers_with_even_number_of_digits_link(ArraysStep.java:224)
+	at ✽.The user clicks Find Numbers with Even Number of Digits link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:147)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1277160809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277160809'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][3]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][3]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnFindNumbers(ArrayPage.java:188)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_find_numbers_with_even_number_of_digits_link(ArraysStep.java:224)
+	at ✽.The user clicks Find Numbers with Even Number of Digits link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:147)
+</pre></div></td>
+<td>15</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Squares of a Sorted Array", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][4]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnSquares(ArrayPage.java:193)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_squares_of_a_sorted_array_link(ArraysStep.java:230)
+	at ✽.The user clicks Squares of a Sorted Array link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:164)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1231075353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1231075353'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][4]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnSquares(ArrayPage.java:193)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_squares_of_a_sorted_array_link(ArraysStep.java:230)
+	at ✽.The user clicks Squares of a Sorted Array link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:164)
+</pre></div></td>
+<td>15</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Max Consecutive Ones", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][2]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnMaxConsecutiveNum(ArrayPage.java:184)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_max_consecutive_ones(ArraysStep.java:218)
+	at ✽.The user clicks Max Consecutive Ones.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:140)
+</pre></div><a href='#' onClick='toggleBox("stack-trace244886962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace244886962'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][2]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][2]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnMaxConsecutiveNum(ArrayPage.java:184)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_max_consecutive_ones(ArraysStep.java:218)
+	at ✽.The user clicks Max Consecutive Ones.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:140)
+</pre></div></td>
+<td>15</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Squares of a Sorted Array", "Arrays"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][4]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnSquares(ArrayPage.java:193)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_squares_of_a_sorted_array_link(ArraysStep.java:230)
+	at ✽.The user clicks Squares of a Sorted Array link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:174)
+</pre></div><a href='#' onClick='toggleBox("stack-trace440033814", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace440033814'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;list-group&apos;][4]/a&quot;}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [034884b549b94ea8203d084daa973747, findElement {using=xpath, value=//div[@class=&apos;list-group&apos;][4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\anish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57228}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57228/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 034884b549b94ea8203d084daa973747
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.dsalgoportal.pages.ArrayPage.clickOnSquares(ArrayPage.java:193)
+	at com.dsalgoportal.stepdefintion.ArraysStep.the_user_clicks_squares_of_a_sorted_array_link(ArraysStep.java:230)
+	at ✽.The user clicks Squares of a Sorted Array link.(file:///C:/Users/anish/eclipse-workspace/DsAlgoPortal/src/test/resources/Features/05_Array.feature:174)
+</pre></div></td>
+<td>15</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,7 +519,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Squares of a Sorted Array", "Arrays"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of Graph page", "Graph feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist insertion Page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Tree Traversals Page", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -86,112 +539,17 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Operations in Stack page", "Title of your feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Types of Binary Trees Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for empty field use case", "Register"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to redirect to try Editor for Arrays Using List page", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Search Trees Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Max Consecutive Ones", "Arrays"</td>
-<td></td>
-<td>3</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to types of linkedlist page having an tryEditor", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of Graph page", "Graph feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation Of BST Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Overview of Trees", "Tree feature"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the tryeditor page of Arrays in python.", "Arrays"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Find Numbers with Even Number of Digits", "Arrays"</td>
-<td></td>
-<td>3</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is on the try editor page of Time complexity", "As a User I want to validate Data Structures Introduction"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to implement linkedlist in python  Page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Find Numbers with Even Number of Digits", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Traversals-Illustration page having an tryeditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -201,52 +559,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user needs to navigate to Practice questions", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist deletion Page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to signin with registered credential", "SignIn feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications of Binary trees page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Trees page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to creating linkedlist Page", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Search Trees page having an tryeditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -256,27 +574,122 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation page having an tryeditor", "Title of your feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Squares of a Sorted Array", "Arrays"</td>
-<td></td>
-<td>3</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation Of BST page having an tryeditor", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Sign In", "Home"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for empty field use case", "Register"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link", "SignIn feature"</td>
+<td></td>
+<td>1</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user needs to navigate to Array Using List page", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Types of Binary Trees Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the tryeditor page of Arrays in python.", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions in stack Page", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
+<td></td>
+<td>1</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Time Complexity page", "As a User I want to validate Data Structures Introduction"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Time Complexity page", "As a User I want to validate Data Structures Introduction"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist deletion page having an tryEditor", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for Password mismatch", "Register"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications page having an tryEditor", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Overview of Trees", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -286,9 +699,79 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error message for password with characters less than 8", "Register"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
 <td></td>
 <td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a valid python code in tryeditor.", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to introduction of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation Of BST page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Logs into the DSAlgo Portal", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
+<td></td>
+<td>1</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user needs to navigate to Practice questions", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
+<td></td>
+<td>1</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to creating linkedlist page having an tryeditor", "Linked List feature"</td>
@@ -301,27 +784,22 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist deletion Page", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Title of your feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Traversals-Illustration Page", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Trees page having an tryeditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist insertion page having an tryEditor", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -331,64 +809,19 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error message for password with characters less than 8", "Register"</td>
 <td></td>
 <td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Array page", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid and valid inputs from Excel on login page and login with", "SignIn feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user needs to navigate to Array Using List page", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to redirect to try Editor for Basic Operations in List page", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation page having an tryeditor", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of Graph page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Tree Traversals page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions in stack Page", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid and valid inputs from Excel on login page and login with", "SignIn feature"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Search the Array", "Arrays"</td>
-<td></td>
-<td>3</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Search the array link", "Arrays"</td>
@@ -401,77 +834,7 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications page having an tryEditor", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor page on Graph page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a valid python code in tryeditor.", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Terminologies Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Register", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
-<td></td>
-<td>2</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "Graph feature"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User in on Data StructureIntroduction Page", "As a User I want to validate Data Structures Introduction"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Register link", "SignIn feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -481,117 +844,17 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation Of BST Page", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions in linkedlist Page", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications in stack Page", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid and valid inputs from Excel on login page and login with", "SignIn feature"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to redirect to try Editor for Applications of Array page", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Search Trees page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist insertion Page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph Representation Page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation in Python page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for code with invalid syntax in tryEditor for Time Complexity page", "As a User I want to validate Data Structures Introduction"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Search the array link", "Arrays"</td>
-<td></td>
-<td>3</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for Password similar to username", "Register"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation Page", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -601,52 +864,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Types of Trees Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of Graph page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Find Numbers with Even Number of Digits", "Arrays"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Search the array link", "Arrays"</td>
 <td></td>
 <td>3</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started with DsAlgoProject", "Get started with DsAlgoProject"</td>
-<td></td>
-<td>2</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions in Graph Page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist deletion page having an tryEditor", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Terminologies page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -656,17 +879,67 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error message for commonly used password", "Register"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation in Python Page", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Squares of a Sorted Array", "Arrays"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
 <td></td>
-<td>4</td>
+<td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Sign In", "Home"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Types of Binary Trees page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Trees Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Search the Array", "Arrays"</td>
+<td></td>
+<td>3</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications in stack Page", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications of Binary trees page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page", "Graph feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -676,12 +949,152 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying signout link", "SignIn feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Traversals-Illustration Page", "Tree feature"</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist transversal page having an tryEditor", "Linked List feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Tree Traversals page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to redirect to try Editor for Arrays Using List page", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications of Binary trees Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for Password with only numbers", "Register"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is on the try editor page of Time complexity", "As a User I want to validate Data Structures Introduction"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page", "Graph feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to redirect to try Editor for Applications of Array page", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Types of Trees Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid and valid inputs from Excel on login page and login with", "SignIn feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to creating linkedlist Page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to signin with registered credential", "SignIn feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a valid python code in tryeditor.", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist insertion page having an tryEditor", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for empty field use case", "Register"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation Page", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started with DsAlgoProject", "Get started with DsAlgoProject"</td>
+<td></td>
+<td>2</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation in Python page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for empty field use case", "Register"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User in on Data StructureIntroduction Page", "As a User I want to validate Data Structures Introduction"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a valid python code in tryeditor.", "Arrays"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -692,126 +1105,6 @@ function toggleAllBoxes() {
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for empty field use case", "Register"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Tree Traversals Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to introduction of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice Questions in linkedlist Page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a valid python code in tryeditor.", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying Register link", "SignIn feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Implementation in Python Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Max Consecutive Ones", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a invalid code in Editor", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Title of your feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user needs to navigate to Applications of Array page", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to types of linkedlist Page", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -826,27 +1119,37 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for error message for commonly used password", "Register"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax of linkedlist page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to types of linkedlist page having an tryEditor", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Terminologies page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid and valid inputs from Excel on login page and login with", "SignIn feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user runs a valid python code in tryeditor.", "Arrays"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist transversal Page", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Arrays in Python page.", "Arrays"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -856,37 +1159,12 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor for Time Complexity page", "As a User I want to validate Data Structures Introduction"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Tree Traversals page having an tryeditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page", "Graph feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications of Binary trees Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Types of Binary Trees page having an tryeditor", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for Password mismatch", "Register"</td>
-<td></td>
-<td>1</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to submit code in tryEditor for Max Consecutive Ones", "Arrays"</td>
-<td></td>
-<td>3</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Tree Traversals page having an tryeditor", "Tree feature"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
@@ -896,37 +1174,162 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Terminologies Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to implement linkedlist in python  Page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph Representation Page", "Graph feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Register", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Operations in Stack page", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist transversal Page", "Linked List feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run valid code in tryEditor page of linkedlist", "Linked List feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Trees Page", "Tree feature"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for Password with only numbers", "Register"</td>
-<td></td>
-<td>0</td>
-<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
-<tr>
-<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Logs into the DSAlgo Portal", "Arrays"</td>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to linkedlist transversal page having an tryEditor", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on DataStructure DropDown without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Arrays in Python page.", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user needs to navigate to Applications of Array page", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Title of your feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Traversals-Illustration page having an tryeditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for Password similar to username", "Register"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid and valid inputs from Excel on login page and login with", "SignIn feature"</td>
+<td></td>
+<td>1</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The User is at the Max Consecutive Ones", "Arrays"</td>
+<td></td>
+<td>3</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor page on Graph page", "Graph feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to types of linkedlist Page", "Linked List feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
 <tr>
 <td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor page on Graph page", "Graph feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "Graph feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to get the error message for invalid syntax", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Get Started of Each DataStructure Section without login", "Home"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to redirect to try Editor for Basic Operations in List page", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Array page", "Arrays"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Binary Search Trees Page", "Tree feature"</td>
+<td></td>
+<td>0</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate through Queue", "Queue"</td>
+<td></td>
+<td>1</td>
+<td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
+<tr>
+<td title='com.dsalgoportal.testrunner.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.dsalgoportal.testrunner.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor", "Tree feature"</td>
 <td></td>
 <td>0</td>
 <td>com.dsalgoportal.testrunner.TestNGTestRunner@fa4c865</td></tr>
