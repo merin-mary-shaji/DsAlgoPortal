@@ -8,6 +8,7 @@ import com.dsalgoportal.pages.QueuePage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,7 +19,7 @@ public class QueueStep {
 	QueuePage queue = new QueuePage(driver);
 	String expected, actual;
 
-	String  pythoncode;
+	//String  pythoncode;
 	String Excelpath = ConfigReader.getexcelfilepath();
 	String url = ConfigReader.getHomePageUrl();
 	String result;
@@ -27,6 +28,7 @@ public class QueueStep {
 	public void the_user_clicks_on_data_structure_drop_down() {
 		driver.get(url);
 		home.clickOnDataStructure();
+		LoggerLoad.info("The user clicks on DataStructure dropdown");
 	}
 
 	@When("The user clicks {string}")
@@ -39,28 +41,32 @@ public class QueueStep {
 		expected = "https://dsportalapp.herokuapp.com/Queue/";
 		actual = queue.getPageUrl();
 		Assert.assertTrue(expected.equalsIgnoreCase(actual));
+		LoggerLoad.info("Queue page is displayed");
 
 	}
 
 	@When("The user clicks on Topics Covered with {string} link")
 	public void the_user_clicks_on_topics_covered_with_link(String string) throws InterruptedException {
 		queue.clickonTopics(string);
+		
 	}
 
 	@When("The user clicks on Tryhere link")
 	public void the_user_clicks_on_tryhere_link() {
 		queue.clickOnTryHere();
+		LoggerLoad.info("The user clicks on Tryhere link");
 	}
 
 	@Then("Page title should be {string}")
 	public void page_title_should_be(String title) {
 		if (driver.getPageSource().contains("Login was unsuccessful.")) {
-			//System.out.println("**unsuccessful login***");
+			LoggerLoad.error("***unsuccessful login***");
 			driver.close();
 			Assert.assertTrue(false);
 		} else 
 		{
 			Assert.assertEquals(title, driver.getTitle());
+			LoggerLoad.info("Page title should be : " + driver.getTitle());
 		}
 	}
 
@@ -93,7 +99,7 @@ public class QueueStep {
 	@When("The user clicks on Run button")
 	public void the_user_clicks_on_run_button() {
 		queue.clickonRun();
-		//System.out.println("Clicked on run");
+		LoggerLoad.info("Clicked on run");
 	}
 
 	@Then("user should be  presented with run result")

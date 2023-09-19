@@ -38,3 +38,122 @@
 [INFO ]2023-09-1416:05:35.117[main]com.dsalgoportal.utils.LoggerLoad1)-Title of the current page is : NumpyNinja
 [INFO ]2023-09-1416:19:46.186[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on GetStarted Button
 [INFO ]2023-09-1416:19:46.213[main]com.dsalgoportal.utils.LoggerLoad1)-Title of the current page is : NumpyNinja
+[INFO ]2023-09-1422:46:42.965[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on GetStarted Button
+[INFO ]2023-09-1422:46:42.998[main]com.dsalgoportal.utils.LoggerLoad1)-Title of the current page is : NumpyNinja
+[INFO ]2023-09-1716:09:56.193[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on GetStarted Button
+[INFO ]2023-09-1716:09:56.225[main]com.dsalgoportal.utils.LoggerLoad1)-Title of the current page is : NumpyNinja
+[INFO ]2023-09-1716:09:56.399[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:09:57.282[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:09:57.909[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:09:59.154[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:00.245[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:01.439[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:02.711[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:03.939[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:05.242[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:06.109[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:07.359[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:08.367[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:09.403[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:10.402[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:11.418[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:12.597[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:13.776[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:14.784[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:15.732[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:16.745[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:18.169[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:19.718[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:21.059[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1716:10:22.466[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:10.166[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on GetStarted Button
+[INFO ]2023-09-1816:00:10.208[main]com.dsalgoportal.utils.LoggerLoad1)-Title of the current page is : NumpyNinja
+[INFO ]2023-09-1816:00:10.325[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:10.979[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:11.055[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:11.169[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:11.882[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Login
+[INFO ]2023-09-1816:00:11.974[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:12.284[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Data Structure dropdown
+[INFO ]2023-09-1816:00:13.496[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:13.647[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:14.025[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Data Structure dropdown
+[INFO ]2023-09-1816:00:14.991[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:15.047[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:15.314[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Data Structure dropdown
+[INFO ]2023-09-1816:00:16.468[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:16.513[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:17.011[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Data Structure dropdown
+[INFO ]2023-09-1816:00:18.104[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:18.148[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:18.615[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Data Structure dropdown
+[INFO ]2023-09-1816:00:19.792[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:19.901[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:20.303[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Data Structure dropdown
+[INFO ]2023-09-1816:00:21.109[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:21.161[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:22.945[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:23.001[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:25.176[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:25.213[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:26.271[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:26.309[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:27.120[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:27.155[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:27.938[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:27.979[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:28.752[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:28.786[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:29.878[main]com.dsalgoportal.utils.LoggerLoad1)-** User gets warning message**
+[INFO ]2023-09-1816:00:29.928[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:30.488[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:30.524[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:31.070[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:31.660[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:31.688[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:32.174[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:32.670[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:32.698[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:33.142[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:33.666[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:33.699[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:34.181[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:34.664[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:34.696[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:35.325[main]com.dsalgoportal.utils.LoggerLoad1)-Error message displayed
+[INFO ]2023-09-1816:00:35.356[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:35.874[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:35.898[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:36.523[main]com.dsalgoportal.utils.LoggerLoad1)-Error message displayed
+[INFO ]2023-09-1816:00:36.563[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:37.033[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:37.060[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:37.721[main]com.dsalgoportal.utils.LoggerLoad1)-Error message displayed
+[INFO ]2023-09-1816:00:37.767[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:38.324[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:38.353[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:38.959[main]com.dsalgoportal.utils.LoggerLoad1)-Error message displayed
+[INFO ]2023-09-1816:00:38.980[main]com.dsalgoportal.utils.LoggerLoad1)-****Launching URL****
+[INFO ]2023-09-1816:00:39.468[main]com.dsalgoportal.utils.LoggerLoad1)-User clicks on Register Link
+[INFO ]2023-09-1816:00:39.492[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Registration
+[INFO ]2023-09-1816:00:40.097[main]com.dsalgoportal.utils.LoggerLoad1)-Error message displayed
+[INFO ]2023-09-1816:02:16.853[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on DataStructure dropdown
+[INFO ]2023-09-1816:02:17.559[main]com.dsalgoportal.utils.LoggerLoad1)-Queue page is displayed
+[INFO ]2023-09-1816:02:18.569[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on Tryhere link
+[INFO ]2023-09-1816:02:18.622[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Assessment
+[INFO ]2023-09-1816:02:19.203[main]com.dsalgoportal.utils.LoggerLoad1)-Clicked on run
+[INFO ]2023-09-1816:02:19.699[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on DataStructure dropdown
+[INFO ]2023-09-1816:02:20.398[main]com.dsalgoportal.utils.LoggerLoad1)-Queue page is displayed
+[INFO ]2023-09-1816:02:21.520[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on Tryhere link
+[INFO ]2023-09-1816:02:21.556[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Assessment
+[INFO ]2023-09-1816:02:22.126[main]com.dsalgoportal.utils.LoggerLoad1)-Clicked on run
+[INFO ]2023-09-1816:02:22.602[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on DataStructure dropdown
+[INFO ]2023-09-1816:02:23.351[main]com.dsalgoportal.utils.LoggerLoad1)-Queue page is displayed
+[INFO ]2023-09-1816:02:24.487[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on Tryhere link
+[INFO ]2023-09-1816:02:24.605[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Assessment
+[INFO ]2023-09-1816:02:25.248[main]com.dsalgoportal.utils.LoggerLoad1)-Clicked on run
+[INFO ]2023-09-1816:02:25.935[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on DataStructure dropdown
+[INFO ]2023-09-1816:02:26.685[main]com.dsalgoportal.utils.LoggerLoad1)-Queue page is displayed
+[INFO ]2023-09-1816:02:28.170[main]com.dsalgoportal.utils.LoggerLoad1)-The user clicks on Tryhere link
+[INFO ]2023-09-1816:02:28.213[main]com.dsalgoportal.utils.LoggerLoad1)-Page title should be : Assessment
+[INFO ]2023-09-1816:02:28.790[main]com.dsalgoportal.utils.LoggerLoad1)-Clicked on run

@@ -7,6 +7,7 @@ import com.dsalgoportal.pages.GetStartedPage;
 import com.dsalgoportal.pages.HomePage;
 import com.dsalgoportal.pages.RegisterPage;
 import com.dsalgoportal.utils.DriverFactory;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,6 +23,7 @@ public class RegisterStep {
 	@When("User click on Register link")
 	public void user_click_on_register_link() {
 		home.clickOnRegister();
+		LoggerLoad.info("User clicks on Register Link");
 	}
 	
 	
@@ -63,6 +65,7 @@ public class RegisterStep {
 		String actualMessage = regist.getErrorMessage();
 	
 		Assert.assertEquals(actualMessage, expectedMessage);
+		LoggerLoad.info("Error message displayed");
 	}
 
 	@Then("The user should be redirected to Homepage with the message {string}")
