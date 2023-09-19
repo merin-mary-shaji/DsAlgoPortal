@@ -13,6 +13,7 @@ import com.dsalgoportal.pages.SignInPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -49,6 +50,7 @@ public class SignInStep {
 	@Then("click login button to verify")
 	public void click_login_button_to_verify()  {
 		signinpage.clickLoginBtn();
+		LoggerLoad.info("User clicks on Login Button");
 		
 	}
 
@@ -56,11 +58,13 @@ public class SignInStep {
 	public void the_user_clicks_on_register_link_on_signin_page() {
 		signinpage.clickRegisterLink();
 		//homepage.clickOnRegister();
+		LoggerLoad.info("User clicks register link on signin page");
 	}
 
 	@Then("The user redirected to Registration page from signin page")
 	public void the_user_redirected_to_registration_page_from_signin_page() {
 		Assert.assertEquals(title, driver.getTitle());
+		LoggerLoad.info("Title of the current page is : " + driver.getTitle());
 	}
 
 	@When("The user enter invalid {string} and {string}")
@@ -72,6 +76,7 @@ public class SignInStep {
 	@And("Error message will be displayed")
 	public void Error_message_will_be_displayed() {
 		Assert.assertEquals(errorMessage, signinpage.getErrorMsg());
+		LoggerLoad.info("Error message displayed is : " + signinpage.getErrorMsg());
 	}
 
 	@When("The user enter sheet {string} and {int}")
@@ -90,23 +95,27 @@ public class SignInStep {
 	public void click_login_button_to_verify_the_message() {
 		String msg = signinpage.click_login();
 		Assert.assertEquals(msg, message);
+		LoggerLoad.info("Message displayed is : " + msg);
+		
 
 	}
 
 	@Then("The user is in the Home page with valid  log in")
 	public void the_user_is_in_the_home_page_with_valid_log_in() {
 		Assert.assertEquals(title1, driver.getTitle());
+		LoggerLoad.info("Title of the current page is : " + driver.getTitle());
 	}
 
 	@And("The user clicks Sign out")
 	public void the_user_clicks_sign_out()  {
 		signinpage.clickSignOut();
-		
+		LoggerLoad.info("User clicks on SignOut Button");
 	}
 
 	@And("Logout message should be displayed")
 	public void logout_message_should_be_displayed() {
 		Assert.assertEquals(logOutMsg, homepage.logoutMsg());
+		LoggerLoad.info("LogOut Message displayed is : " + homepage.logoutMsg());
 	}
 
 }
