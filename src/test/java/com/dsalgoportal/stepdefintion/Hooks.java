@@ -1,12 +1,19 @@
 package com.dsalgoportal.stepdefintion;
 
+import java.io.ByteArrayInputStream;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 
+import io.cucumber.java.After;
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
+import io.cucumber.java.Scenario;
+import io.qameta.allure.Allure;
 
 public class Hooks {
 	private static WebDriver driver;
@@ -26,4 +33,14 @@ public class Hooks {
 	public static void after() {
 		driverfactory.closeallDriver();
 	}
+	@After
+	public void afterEach(Scenario scenario) {
+	if(scenario.isFailed())
+	{
+	Allure.addAttachment(scenario.getName(),"image/png",
+	new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)), "png");
+	}
+	
+	}
+	
 }
