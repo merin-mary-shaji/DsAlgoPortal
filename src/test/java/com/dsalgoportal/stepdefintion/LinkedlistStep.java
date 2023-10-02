@@ -14,6 +14,7 @@ import com.dsalgoportal.pages.SignInPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -47,25 +48,30 @@ public class LinkedlistStep {
 		driver.get(url);
 		homepage.clicklinkedlist_GetStartBtn();
 		Assert.assertEquals(driver.getTitle(), title1);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks on the introduction link")
 	public void the_user_clicks_on_the_introduction_link() {
 		Linkedlistpage.clickIntroduction();
+		LoggerLoad.info("User clicks on Introduction");
 	}
 
 	@Then("The user should then be directed to introduction page")
 	public void the_user_should_then_be_directed_to_introduction_page() {
 		Assert.assertEquals(driver.getTitle(), title2);
+		LoggerLoad.info("user should be directed to introduction page");
 	}
 
 	@When("The user clicks Try Here button in introduction of linkedlist page")
 	public void the_user_clicks_try_here_button_in_introduction_of_linkedlist_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 	@Then("The user should be redirected to a page having an Editor page with a Run button to test")
 	public void the_user_should_be_redirected_to_a_page_having_an_editor_page_with_a_run_button_to_test() {
 		Assert.assertEquals(driver.getTitle(), title3);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 	@When("The user gets input from spread sheet {string} and {int}")
 	public void the_user_gets_input_from_spread_sheet_and(String name, Integer Row) throws InvalidFormatException, IOException {
@@ -81,18 +87,21 @@ public class LinkedlistStep {
 		//System.out.println(pythoncode);
         Linkedlistpage.enterText(pythoncode);
        Linkedlistpage.clickrunbtn();
+       LoggerLoad.info("user clicks on runbtn");
 	}
 
 	@Then("The user should be presented with Run output welcome to linkedlist page")
 	public void the_user_should_be_presented_with_run_output_welcome_to_linkedlist_page() {
 		String textoutput=Linkedlistpage.textoutput();
 	    Assert.assertEquals(textoutput, result);
+	    LoggerLoad.info("user is presented with textoutput");
 	}
 
 	@Given("The user is in introduction of linkedlist  page having an tryEditor with a Run button to test")
 	public void the_user_is_in_introduction_of_linkedlist_page_having_an_try_editor_with_a_run_button_to_test() {
 		driver.navigate().back();
 	    Linkedlistpage.clickTryherebtn();
+	    LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
 	@When("The user gets invalid input from spread sheet {string} and {int}")
@@ -108,12 +117,14 @@ public class LinkedlistStep {
 		//System.out.println(pythoncode);
 		Linkedlistpage.enterText(pythoncode);
 	    Linkedlistpage.clickrunbtn();
+	    LoggerLoad.info("User clicks on runbtn");
 	}
 
 	@Then("The user should expect the error message")
 	public void the_user_should_expect_the_error_message() {
 		String actualAlertmsg =Linkedlistpage.alertPopUp();
 		 Assert.assertEquals(actualAlertmsg, alertmsg);
+		 LoggerLoad.info("the error message : " + actualAlertmsg);
 
 	}
 
@@ -121,106 +132,126 @@ public class LinkedlistStep {
 	public void the_user_clicks_on_the_creating_linkedlist_button() {
 		driver.navigate().back();
 		Linkedlistpage.clickCreatingLinkedLIst();
+		LoggerLoad.info("User clicks on CreatingLinkedLIst ");
 	}
 
 	@Then("The user should then be directed to creating linkedlist Page")
 	public void the_user_should_then_be_directed_to_creating_linkedlist_page() {
 		Assert.assertEquals(driver.getTitle(), title4);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Try Here button in creatinglinkedlist page")
 	public void the_user_clicks_try_here_button_in_creatinglinkedlist_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
 	@When("The user clicks on the types of linkedlist button")
 	public void the_user_clicks_on_the_types_of_linkedlist_button() {
 		driver.navigate().back();
 		Linkedlistpage.clickTypesofLinkedList();
+		LoggerLoad.info("User clicks on TypesofLinkedList ");
 	}
 
 	@Then("The user should be directed to types of linkedlist Page")
 	public void the_user_should_be_directed_to_types_of_linkedlist_page() {
 		Assert.assertEquals(driver.getTitle(), title5);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Try Here button in types of linkedlist page")
 	public void the_user_clicks_try_here_button_in_types_of_linkedlist_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
 	@When("The user clicks on the implement linkedlist in python button")
 	public void the_user_clicks_on_the_implement_linkedlist_in_python_button() {
 		driver.navigate().back();
 		Linkedlistpage.clickImplementLinkedListinPython();
+		LoggerLoad.info("User clicks on ImplementLinkedListinPython");
 	}
 
 	@Then("The user should be directed to implement linkedlist in python Page")
 	public void the_user_should_be_directed_to_implement_linkedlist_in_python_page() {
 		Assert.assertEquals(driver.getTitle(), title6);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Try Here button in implement linkedlist in python  page")
 	public void the_user_clicks_try_here_button_in_implement_linkedlist_in_python_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
 	@When("The user clicks on the linkedlist transversal button")
 	public void the_user_clicks_on_the_linkedlist_transversal_button() {
 		driver.navigate().back();
 		Linkedlistpage.clickTraversal();
+		LoggerLoad.info("User clicks on Traversal");
 	}
 
 	@Then("The user should be directed to linkedlist transversal Page")
 	public void the_user_should_be_directed_to_linkedlist_transversal_page() {
 		Assert.assertEquals(driver.getTitle(), title7);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Try Here button in linkedlist transversal page")
 	public void the_user_clicks_try_here_button_in_linkedlist_transversal_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
 	@When("The user clicks on the linkedlist insertion button")
 	public void the_user_clicks_on_the_linkedlist_insertion_button() {
 		driver.navigate().back();
 		Linkedlistpage.clickInsertion();
+		LoggerLoad.info("User clicks on Insertion");
 	}
 
 	@Then("The user should be directed to linkedlist insertion Page")
 	public void the_user_should_be_directed_to_linkedlist_insertion_page() {
 		Assert.assertEquals(driver.getTitle(), title8);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Try Here button in linkedlist insertion page")
 	public void the_user_clicks_try_here_button_in_linkedlist_insertion_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
 	@When("The user clicks on the linkedlist deletion button")
 	public void the_user_clicks_on_the_linkedlist_deletion_button() {
 		driver.navigate().back();
 		Linkedlistpage.clickDeletion();
+		LoggerLoad.info("User clicks on Deletion");
 	}
 
 	@Then("The user should be directed to linkedlist deletion Page")
 	public void the_user_should_be_directed_to_linkedlist_deletion_page() {
 		Assert.assertEquals(driver.getTitle(), title9);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Try Here button in linkedlist deletion page")
 	public void the_user_clicks_try_here_button_in_linkedlist_deletion_page() {
 		Linkedlistpage.clickTryherebtn();
+		 LoggerLoad.info("User clicks on Tryherebtn");
 	}
 
     @When("The user clicks on the Practice Questions button in linkedlist page")
   public void the_user_clicks_on_the_practice_questions_button_in_linkedlist_page() {
     	driver.navigate().back();
 		Linkedlistpage.clickPracticeQuestions();
+		LoggerLoad.info("User clicks on PracticeQuestions");
 }
 
    @Then("The user should be redirected to Practice Questions page of linkedlist page")
    public void the_user_should_be_redirected_to_practice_questions_page_of_linkedlist_page() {
 	   Assert.assertEquals(driver.getTitle(), title10);
+	   LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 }
 }

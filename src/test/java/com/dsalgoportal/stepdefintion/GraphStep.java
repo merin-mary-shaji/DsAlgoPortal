@@ -14,6 +14,7 @@ import com.dsalgoportal.pages.GraphPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -43,26 +44,31 @@ public class GraphStep{
 		driver.get(url);
 		homepage.clickgetStartGraphBtn();
 		Assert.assertEquals(driver.getTitle(), title1);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks on the Graph link on Graph page")
 	public void the_user_clicks_on_the_graph_link_on_graph_page() {
 		Graphpage.clickGraphLink();
+		LoggerLoad.info("User clicks on GraphLink");
 	}
 
 	@Then("The user should then be directed to Graph Graph page")
 	public void the_user_should_then_be_directed_to_graph_graph_page() {
 		Assert.assertEquals(driver.getTitle(), title2);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Tryhere button in Graph page")
 	public void the_user_clicks_tryhere_button_in_graph_page() {
 		Graphpage.clicktryherebtn();
+		 LoggerLoad.info("User clicks on tryherebtn");
 	}
 
 	@Then("The user should be redirected to a page having an tryEditor page  with a Run button to test")
 	public void the_user_should_be_redirected_to_a_page_having_an_try_editor_page_with_a_run_button_to_test() {
 		Assert.assertEquals(driver.getTitle(), title3);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user gets input from Excel sheet {string} and {int}")
@@ -79,18 +85,21 @@ public class GraphStep{
 		//System.out.println(pythonCode);
 	    Graphpage.enterText(pythonCode);
 	   Graphpage.clickRunbtn();
+	   LoggerLoad.info("user clicks on Runbtn");
 	}
 
 	@Then("The user should be presented with Run output welcome to Graph page")
 	public void the_user_should_be_presented_with_run_output_welcome_to_graph_page() {
 		String msgoutput=Graphpage.msgoutput();
 	    Assert.assertEquals(msgoutput, Result);
+	    LoggerLoad.info("user is presented with msgoutput");
 	}
 
 	@Given("The user is in Graph  page having an tryEditor page with a Run button to test")
 	public void the_user_is_in_graph_page_having_an_try_editor_page_with_a_run_button_to_test() {
 		driver.navigate().back();
 	    Graphpage.clicktryherebtn();
+	    LoggerLoad.info("User clicks on tryherebtn");
 
 	}
 
@@ -108,6 +117,7 @@ public class GraphStep{
 		//System.out.println(pythonCode);
 		Graphpage.enterText(pythonCode);
 	    Graphpage.clickRunbtn();
+	    LoggerLoad.info("user clicks on Runbtn");
 
 	}
 
@@ -115,33 +125,40 @@ public class GraphStep{
 	public void the_user_should_get_the_error_message_of_graph_page() {
 		String actualAlertmsg =Graphpage.alertPopUp();
 		 Assert.assertEquals(actualAlertmsg, alertmsg);
+		 LoggerLoad.info("the error message : " + actualAlertmsg);
 	}
 
 	@When("The user clicks on the Graph Representation button")
 	public void the_user_clicks_on_the_graph_representation_button() {
 		driver.navigate().back();
 		Graphpage.clickGraphRepresentations();
+		LoggerLoad.info("User clicks on GraphRepresentations");
+		
 	}
 
 	@Then("The user should then be directed to Graph Representation Page")
 	public void the_user_should_then_be_directed_to_graph_representation_page() {
 		Assert.assertEquals(driver.getTitle(), title4);
+		LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 	}
 
 	@When("The user clicks Tryhere button in Graph Representation page")
 	public void the_user_clicks_tryhere_button_in_graph_representation_page() {
 		Graphpage.clicktryherebtn();
+		LoggerLoad.info("User clicks on tryherebtn");
 	}
 
 	@When("The user clicks on the Practice Questions button in Graph page")
 	public void the_user_clicks_on_the_practice_questions_button_in_graph_page() {
 		driver.navigate().back();
 		Graphpage.clickGraphPracticeQuestions();
+		LoggerLoad.info("User clicks on GraphPracticeQuestions");
 	}
 
 	@Then("The user should be redirected to Practice Questions page of Graph page")
 	public void the_user_should_be_redirected_to_practice_questions_page_of_graph_page() {
 		 Assert.assertEquals(driver.getTitle(), title5);
+		 LoggerLoad.info("Title of the present page is : " + driver.getTitle());
 		 }
 	}
   
