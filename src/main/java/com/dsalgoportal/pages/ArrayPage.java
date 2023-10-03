@@ -1,10 +1,12 @@
 package com.dsalgoportal.pages;
 
 import java.awt.Robot;
+
 import java.awt.event.KeyEvent;
 import java.lang.module.FindException;
 import java.time.Duration;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -49,49 +51,99 @@ public class ArrayPage extends BasePage {
 	By clickOnSquares = By.xpath("//div[@class='list-group'][4]/a");
 	By clickOnSubmit = By.xpath("//input[@value='Submit']");
 	By subMsg = By.xpath("(//pre[@id='output'])");
+		
+	public boolean clickElement(By oLocator)
+	{
+		try
+		{	
+			driver.findElement(oLocator).click();
+			return true;
+		}
+		catch (Exception e) 
+		{
+			System.out.println("Error description :"+e);
+			return false;
+		}		
+	}
+	
+	public boolean sendText(By oLocator ,String sText)
+	{
+		
+		try
+		{
+			driver.findElement(oLocator).sendKeys(sText);
+			
+			return true;
+		}
+		catch (Exception e) 
+		{
+			System.out.println("Error description :"+e);
+			return false;
+		}	
+	}
+	
+	public String gettext(By oLocator)
+	{
+		try
+		{
+			String value = driver.findElement(oLocator).getText();
+			
+			return value;
+		}
+		catch (Exception e) 
+		{
+			System.out.println("Error description :"+e);
+			return "";
+		}	
+	}
+	
+	public boolean clickOnGetStarted() {
 
-	public void clickOnGetStarted() {
-
-		driver.findElement(getStartedArray).click();
+		
+		return clickElement(getStartedArray);
 	}
 
-	public void clickOnArrayPython() {
-		driver.findElement(clickArrayPython).click();
+	public boolean clickOnArrayPython() {
+		return clickElement(clickArrayPython);
 
 	}
 
-	public void clickOnTryHere() {
-		driver.findElement(clkTryHere).click();
+	public boolean clickOnTryHere() {
+		return clickElement(clkTryHere);
 
 	}
 
 	
-	public void clickOnRunButton() {
-		driver.findElement(runBtn).click();
+	public boolean clickOnRunButton() {
+		return clickElement(runBtn);
 	}
 
 	public void codeEditor(String pythoncode) {
-		driver.findElement(clickonEntercode).click();
-
-		/*
-		 * WebElement element = driver.findElement(clickonEntercode); Actions actions =
-		 * new Actions (driver); actions.moveToElement(element).click();
-		 * element.sendKeys(pythoncode);
-		 */
-
+//		driver.findElement(clickonEntercode).click();
+		clickElement(clickonEntercode);
+//
+//		/*
+//		 * WebElement element = driver.findElement(clickonEntercode); Actions actions =
+//		 * new Actions (driver); actions.moveToElement(element).click();
+//		 * element.sendKeys(pythoncode);
+//		 */
+//
 		WebElement focuselement = driver.switchTo().activeElement();
 		focuselement.sendKeys(pythoncode);
-		//System.out.println("Test");
+//		//System.out.println("Test");
+		
+		
+		
 	}
 
 	public void codeOutput() {
 
-		String s = driver.findElement(pythonOutPut).getText();
+		String s = gettext(pythonOutPut);
 		//System.out.println(s);
 	}
 
-	public void runButtonEnabled() {
-		driver.findElement(runBtn).click();
+	public boolean runButtonEnabled() {
+		return clickElement(runBtn);
 
 	}
 
@@ -104,9 +156,7 @@ public class ArrayPage extends BasePage {
 
 		try {
 			driver.findElement(By.xpath("//span[text()='def']")).click();
-			WebElement text = driver.findElement(clickonEntercode);
-//			JavascriptExecutor js = (JavascriptExecutor) driver;
-//			js.executeScript("document.getElementById('editor').clear()");
+			
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			Thread.sleep(500);
@@ -120,12 +170,13 @@ public class ArrayPage extends BasePage {
 			Thread.sleep(500);
 			robot.keyRelease(KeyEvent.VK_DELETE);
 			Thread.sleep(500);
-			System.out.println();
-//			driver.findElement(By.xpath("//span[text()='search']")).clear();
+
+
+			
 		} catch (Exception e) {
-			//System.out.println("Exception " + e);
+			System.out.println("Exception " + e);
 		}
-		//System.out.println("imhere");
+		
 	}
 
 	public String alerMsg() {
@@ -139,57 +190,55 @@ public class ArrayPage extends BasePage {
 		driver.getTitle();
 	}
 
-	public void clickOnArrayLink() {
-		driver.findElement(clickOnArraysUsingList).click();
+	public boolean clickOnArrayLink() {
+		return clickElement(clickOnArraysUsingList);
 
 	}
 
-	public void clickOnPraticeQuestions() {
+	public boolean clickOnPraticeQuestions() {
 
-		driver.findElement(clickOnPracticeQuest).click();
+		return clickElement(clickOnPracticeQuest);
 		
 //	 WebElement focuselement = driver.switchTo().activeElement();
 //      focuselement.click();
 	}
 
-	public void clickOnSearch() {
+	public boolean clickOnSearch() {
 
-		driver.findElement(clickOnSearchArray).click();
+		return clickElement(clickOnSearchArray);
 	}
 
-	public void clickOnBasicOperations() {
-		driver.findElement(clickOnBasicOperation).click();
+	public boolean clickOnBasicOperations() {
+		return clickElement(clickOnBasicOperation);
 	}
 
-	public void clickonAppArrayLink() {
-		driver.findElement(clickOnApplicationsOfArray).click();
+	public boolean clickonAppArrayLink() {
+		return clickElement(clickOnApplicationsOfArray);
 	}
 
-	public void clickOnSearchArrayLink() {
-		driver.findElement(clickOnSearchArray).click();
+	public boolean clickOnSearchArrayLink() {
+		return clickElement(clickOnSearchArray);
 	}
 
-	public void submitbutton() {
-		driver.findElement(clickOnSubmit).clear();
-
-	}
-
-	public void clickOnSubmitButton() {
-		driver.findElement(clickOnSubmit).click();
-		String s = driver.findElement(pythonOutPut).getText();
-		//System.out.println(s);
-	}
-
-	public void clickOnMaxConsecutiveNum() {
-		driver.findElement(clickOnMaxConsecutiveOne).click();
-	}
-
-	public void clickOnFindNumbers() {
-		driver.findElement(clickOnFindNum).click();
+	public boolean submitbutton() {
+		return clickElement(clickOnSubmit);
 
 	}
 
-	public void clickOnSquares() {
-		driver.findElement(clickOnSquares).click();
+	public boolean clickOnSubmitButton() {
+		return clickElement(clickOnSubmit);
+	}
+
+	public boolean clickOnMaxConsecutiveNum() {
+		return clickElement(clickOnMaxConsecutiveOne);
+	}
+
+	public boolean clickOnFindNumbers() {
+		return clickElement(clickOnFindNum);
+
+	}
+
+	public boolean clickOnSquares() {
+		return clickElement(clickOnSquares);
 	}
 }

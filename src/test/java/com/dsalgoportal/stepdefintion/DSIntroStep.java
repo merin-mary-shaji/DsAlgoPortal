@@ -5,16 +5,18 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.compress.archivers.dump.InvalidFormatException;
-import org.testng.Assert;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
+import com.dsalgoportal.pages.ArrayPage;
 import com.dsalgoportal.pages.DSIntroPage;
 import com.dsalgoportal.pages.HomePage;
 import com.dsalgoportal.pages.SignInPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.*;
 
@@ -33,8 +35,11 @@ public class DSIntroStep {
 
 	@When("the user clicks on the Get Started button on homepage")
 	public void the_user_clicks_on_the_get_started_button_on_homepage() {
-		driver.get(url);
-		dsintropage.clickOnGetStarted();
+		driver.get(url);	
+		if (dsintropage.clickOnGetStarted())
+			LoggerLoad.info(" Get Started link clicked successfull");
+		else
+			LoggerLoad.error(" Get Started Link not clicked");
 	}
 
 	@Then("The user is redirected to page with title {string}")
@@ -45,11 +50,17 @@ public class DSIntroStep {
 	@Given("The user is on the DataStructure Introduction page with Time complexity")
 	public void the_user_is_on_the_data_structure_introduction_page_with_time_complexity() {
 		driver.getTitle();
+
 	}
 
 	@Then("The user clicks on the Time Complexity link.")
 	public void the_user_clicks_on_the_time_complexity_link() {
-		dsintropage.clickOnTimeCompexity();
+
+		if (dsintropage.clickOnTimeCompexity())
+			LoggerLoad.info(" Time Complexity link clicked successfull");
+		else
+			LoggerLoad.error(" Time Complexity Link not clicked");
+
 	}
 
 	@Then("The user is redirected to landing page with tile {string}")
@@ -59,7 +70,11 @@ public class DSIntroStep {
 
 	@Then("The user clicks on the Try Here button")
 	public void the_user_clicks_on_the_try_here_button() {
-		dsintropage.clickOnTryHere();
+
+		if (dsintropage.clickOnTryHere())
+			LoggerLoad.info(" Try Here button was clicked successfull");
+		else
+			LoggerLoad.error(" Try Here button was not clicked");
 	}
 
 	@Then("The user lands in the page with try editor with Title {string}")
@@ -79,7 +94,11 @@ public class DSIntroStep {
 
 	@When("The user clicks on run button")
 	public void the_user_clicks_on_run_button() {
-		dsintropage.clickOnRunBtn();
+
+		if (dsintropage.clickOnRunBtn())
+			LoggerLoad.info(" Run button was clicked successfull");
+		else
+			LoggerLoad.error(" Run button was not clicked");
 	}
 
 	@Then("The user should be presented with Run result")
