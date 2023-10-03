@@ -13,6 +13,7 @@ import com.dsalgoportal.pages.SignInPage;
 import com.dsalgoportal.utils.ConfigReader;
 import com.dsalgoportal.utils.DriverFactory;
 import com.dsalgoportal.utils.ExcelReader;
+import com.dsalgoportal.utils.LoggerLoad;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -38,6 +39,7 @@ public class ArraysStep {
 	String basicOp = "Basic Operations in Lists";
 
 	String errormsg;
+	
 
 	@Given("The user has launched browser and is on sign in page")
 	public void the_user_has_launched_browser_and_is_on_sign_in_page() {
@@ -48,6 +50,7 @@ public class ArraysStep {
 	public void user_enters_valid_credentials_username_and_password(String name, String password) {
 		signinpage.enterUsername(name);
 		signinpage.enterPassword(password);
+		
 	}
 
 	@Then("The user is navigates to homepage")
@@ -62,7 +65,10 @@ public class ArraysStep {
 
 	@When("the user clicks on the get started button of the Array.")
 	public void the_user_clicks_on_the_get_started_button_of_the_array() {
-		arraypage.clickOnGetStarted();
+		if(arraypage.clickOnGetStarted())
+			LoggerLoad.info(" Arrays Link clicked successfull");
+		else
+			LoggerLoad.error("Link not clicked");
 	}
 
 	@Then("the user is redirected to Array page {string}")
@@ -72,7 +78,10 @@ public class ArraysStep {
 
 	@When("the user clicks on hyperlink Arrays in Python")
 	public void the_user_clicks_on_hyperlink_arrays_in_python() {
-		arraypage.clickOnArrayPython();
+		if(arraypage.clickOnArrayPython())
+			LoggerLoad.info("Arrays in Python Link was clicked successfull");
+		else
+			LoggerLoad.error("Arrays in python Link was not clicked");
 	}
 
 	@Then("the user is redirected to Arrays in python page {string}")
@@ -82,7 +91,10 @@ public class ArraysStep {
 
 	@When("the user clicks on the try here button.")
 	public void the_user_clicks_on_the_try_here_button() {
-		arraypage.clickOnTryHere();
+		if(arraypage.clickOnTryHere())
+			LoggerLoad.info("Try Here Button clicked successfull");
+		else
+			LoggerLoad.error("Try Here Button not clicked");
 	}
 
 	@Then("the user is redirected to the assessment page {string}")
@@ -92,7 +104,10 @@ public class ArraysStep {
 
 	@When("The user is at the Try editor page with Run button.")
 	public void the_user_is_at_the_try_editor_page_with_run_button() {
-		arraypage.runButtonEnabled();
+		if(arraypage.runButtonEnabled())
+			LoggerLoad.info("Run Button clicked successfull");
+		else
+			LoggerLoad.error("Run Button not clicked");
 	}
 
 	@Then("the user passes valid code from data sheet {string} and {int}")
@@ -107,7 +122,10 @@ public class ArraysStep {
 
 	@Then("clicks on the run button")
 	public void clicks_on_the_run_button() {
-		arraypage.clickOnRunButton();
+		if(arraypage.clickOnRunButton())
+			LoggerLoad.info("Run Button clicked successfull");
+		else
+			LoggerLoad.error("Run Button not clicked");
 	}
 
 	@Then("the user should be presented with valid output.")
@@ -123,7 +141,10 @@ public class ArraysStep {
 
 	@Given("The user clicks the Try editor page with Run button.")
 	public void the_user_clicks_the_try_editor_page_with_run_button() {
-		arraypage.clickOnTryHere();
+		if(arraypage.clickOnTryHere())
+			LoggerLoad.info("Try Editor link was clicked successfull");
+		else
+			LoggerLoad.error("Try Editor Link not clicked");
 	}
 
 	@Then("The user send invalid code from datasheet {string} and {int}")
@@ -143,7 +164,10 @@ public class ArraysStep {
 
 	@When("The user clicks Array Using List link.")
 	public void the_user_clicks_array_using_list_link() {
-		arraypage.clickOnArrayLink();
+		if(arraypage.clickOnArrayLink())
+			LoggerLoad.info("Array Using List Link was clicked successfull");
+		else
+			LoggerLoad.error("Array using list Link not clicked");
 	}
 
 	@Then("It should redirect the user to {string}")
@@ -154,17 +178,26 @@ public class ArraysStep {
 
 	@When("The user clicks Basic Operations in List link.")
 	public void the_user_clicks_basic_operations_in_list_link() {
-		arraypage.clickOnBasicOperations();
+		if(arraypage.clickOnBasicOperations())
+			LoggerLoad.info("Basic Operations in List Link clicked successfull");
+		else
+			LoggerLoad.error("Basic Operations in List Link not clicked");
 	}
 
 	@When("The user clicks Applications of Array page link.")
 	public void the_user_clicks_applications_of_array_page_link() {
-		arraypage.clickonAppArrayLink();
+		if(arraypage.clickonAppArrayLink())
+			LoggerLoad.info("Applications of Array page Link clicked successfull");
+		else
+			LoggerLoad.error("Applications of Array page Link not clicked");
 	}
 
 	@When("The user clicks Applications of Practice questions link.")
 	public void the_user_clicks_applications_of_practice_questions_link() {
-		arraypage.clickOnPraticeQuestions();
+		if(arraypage.clickOnPraticeQuestions())
+			LoggerLoad.info("Applications of Practice questions Link clicked successfull");
+		else
+			LoggerLoad.error("Applications of Practice questions Link not clicked");
 		
 	}
 	@Then("It should redirect the user to Practice Questions")
@@ -176,7 +209,10 @@ public class ArraysStep {
 
 	@When("The user clicks Search the Array link.")
 	public void the_user_clicks_search_the_array_link() throws InterruptedException {
-		arraypage.clickOnSearchArrayLink();
+		if(arraypage.clickOnSearchArrayLink())
+			LoggerLoad.info("Search the Array Link clicked successfull");
+		else
+			LoggerLoad.error("Search the Array Link not clicked");
 		arraypage.clearEditor();
 	}
 
@@ -210,24 +246,36 @@ public class ArraysStep {
 
 	@And("The user clicks on submit button")
 	public void the_user_clicks_on_submit_button() {
-		arraypage.clickOnSubmitButton();
+		if(arraypage.clickOnSubmitButton())
+			LoggerLoad.info("submit button clicked successfull");
+		else
+			LoggerLoad.error("submit button not clicked");
 	}
 
 	@When("The user clicks Max Consecutive Ones.")
 	public void the_user_clicks_max_consecutive_ones() throws InterruptedException {
-		arraypage.clickOnMaxConsecutiveNum();
+		if(arraypage.clickOnMaxConsecutiveNum())
+			LoggerLoad.info("Max Consecutive Ones link clicked successfull");
+		else
+			LoggerLoad.error("Max Consecutive Ones link not clicked");
 		arraypage.clearEditor();
 	}
 
 	@When("The user clicks Find Numbers with Even Number of Digits link.")
 	public void the_user_clicks_find_numbers_with_even_number_of_digits_link() throws InterruptedException {
-		arraypage.clickOnFindNumbers();
+		if(arraypage.clickOnFindNumbers())
+			LoggerLoad.info("Find Numbers with Even Number of Digits Link clicked successfull");
+		else
+			LoggerLoad.error("Find Numbers with Even Number of Digits Link not clicked");
 		arraypage.clearEditor();
 	}
 
 	@When("The user clicks Squares of a Sorted Array link.")
 	public void the_user_clicks_squares_of_a_sorted_array_link() throws InterruptedException {
-		arraypage.clickOnSquares();
+		if(arraypage.clickOnSquares())
+			LoggerLoad.info("Squares of a Sorted Array Link clicked successfull");
+		else
+			LoggerLoad.error("Squares of a Sorted Array Link not clicked");
 		arraypage.clearEditor();
 	}
 

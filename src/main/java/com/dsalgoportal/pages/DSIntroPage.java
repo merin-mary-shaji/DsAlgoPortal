@@ -11,7 +11,7 @@ public class DSIntroPage extends BasePage{
 		super(driver);
 		PageFactory.initElements(driver, this);	}
 
-	By getStartedArray = By.xpath("//a[@href='data-structures-introduction']");
+	By getStartedDSintro = By.xpath("//a[@href='data-structures-introduction']");
 	By clkonTimeComplexity=By.xpath("//a[text()='Time Complexity']");
 	By clkTryHere = By.xpath("/html/body/div[2]/div/div[2]/a");
 	By clickonEntercode = By.xpath("//div[@class='CodeMirror-code']");
@@ -19,16 +19,28 @@ public class DSIntroPage extends BasePage{
 	By pythonOutPut = By.id("output");
 	
 	
-	
-	
-	public void clickOnGetStarted() {
-		driver.findElement(getStartedArray).click();
+	public boolean clickElement(By oLocator)
+	{
+		try
+		{	
+			driver.findElement(oLocator).click();
+			return true;
+		}
+		catch (Exception e) 
+		{
+			System.out.println("Error description :"+e);
+			return false;
+		}		
 	}
-	public void clickOnTimeCompexity() {
-		driver.findElement(clkonTimeComplexity).click();
+	
+	public boolean clickOnGetStarted() {
+		return clickElement(getStartedDSintro);
 	}
-	public void clickOnTryHere() {
-		driver.findElement(clkTryHere).click();
+	public boolean clickOnTimeCompexity() {
+				return clickElement(clkonTimeComplexity);
+	}
+	public boolean clickOnTryHere() {
+				return clickElement(clkTryHere);
 	}
 	
 	public void codeEditor(String pythcode) {
@@ -36,8 +48,8 @@ public class DSIntroPage extends BasePage{
 		WebElement focuselement = driver.switchTo().activeElement();
 		focuselement.sendKeys(pythcode);
 	}
-	public void clickOnRunBtn() {
-		driver.findElement(runBtn).click();
+	public boolean clickOnRunBtn() {
+		return clickElement(runBtn);
 	}
 	public String alerMsg() {
     	String alertMessage = driver.switchTo().alert().getText();
@@ -59,4 +71,3 @@ public class DSIntroPage extends BasePage{
 
 	{ driver.findElement(clickonEntercode).clear();}
 }
-

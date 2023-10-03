@@ -1,4 +1,4 @@
-Feature: Title of your feature
+Feature: Stack feature
   I want to use this template for my feature file
 
   Scenario: The user is able to navigate to Operations in Stack page
